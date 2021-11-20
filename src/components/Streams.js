@@ -29,7 +29,7 @@ const Streams = () => {
                   title={twitchName}
                   parent='localhost'
                   className='stream-player'
-                  src={`https://player.twitch.tv/?channel=${twitchName}&parent=localhost&parent=staymad.netlify.app/&muted=true&autoplay=false`}
+                  src={`https://player.twitch.tv/?channel=${twitchName}&parent=localhost&parent=staymad.netlify.app&muted=true&autoplay=false`}
                   allowFullScreen={true}
                 ></iframe>
                 <div className='stream-names'>
