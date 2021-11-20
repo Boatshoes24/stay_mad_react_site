@@ -37,14 +37,13 @@ const GuildInformation = () => {
       <h2 className='emphasized-item'>What You Can Expect From Us</h2>
       <br />
       <p>
-        Having a tight-knit group has long been an appeal of the group. Most
-        people who join end up staying for a long stretch of time. Some new
-        recruits may find this off-putting at first, but we are very open to
-        making new friends and try to avoid cliques and bias as much as
-        possible. Our officers are also generally very approachable and
-        available outside of raid times. At the end of the day we are mostly a
-        group of adults with a similar passion that we want to make as enjoyable
-        as possible.
+        Having a tight-knit group is one of our major appeals and most people
+        who join end up staying for a long stretch of time. Some new recruits
+        may find this off-putting at first, but we are very open to making new
+        friends and try to avoid cliques and bias as much as possible. Our
+        officers are also generally very approachable and available outside of
+        raid times. At the end of the day we are mostly a group of adults with a
+        similar passion that we want to make as enjoyable as possible.
       </p>
       <br />
       <br />
@@ -75,7 +74,7 @@ const GuildInformation = () => {
       <h2 className='emphasized-item'>Required Addons</h2>
       <br />
       <p>
-        We do have a short list of required addons. All accepted applicant will
+        We do have a short list of required addons. All accepted applicants will
         be expected to show up with these already downloaded. If you are not
         accustomed to a particular addon we will walk you through what we need
         you to do with it when the time comes.
