@@ -11,7 +11,7 @@
   },
   {
     "name": "Frost Death Knight",
-    "recruiting": true,
+    "recruiting": false,
     "img": "dk-frost.jpg"
   },
   {
@@ -46,12 +46,12 @@
   },
   {
     "name": "Beast Mastery Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "img": "hunter-bm.jpg"
   },
   {
     "name": "Marksmanship Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "img": "hunter-mm.jpg"
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "name": "Holy Paladin",
-    "recruiting": true,
+    "recruiting": false,
     "img": "paladin-holy.jpg"
   },
   {
@@ -166,12 +166,12 @@
   },
   {
     "name": "Arms Warrior",
-    "recruiting": true,
+    "recruiting": false,
     "img": "warrior-arms.jpg"
   },
   {
     "name": "Fury Warrior",
-    "recruiting": true,
+    "recruiting": false,
     "img": "warrior-fury.jpg"
   },
   {
