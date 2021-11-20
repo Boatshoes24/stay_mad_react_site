@@ -1,14 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../css/home.css';
+import '../css/classcolor.css';
 import classes from '../config/recruitmentNeeds';
 import raids from '../config/raids';
+const previousRaids = require('../config/previousRaids.json');
+const raidRoster = require('../config/raidRoster.json');
+
+const classColors = {
+  'Death Knight': 'death-knight',
+  'Demon Hunter': 'demon-hunter',
+  Druid: 'druid',
+  Hunter: 'hunter',
+  Mage: 'mage',
+  Monk: 'monk',
+  Paladin: 'paladin',
+  Priest: 'priest',
+  Rogue: 'rogue',
+  Shaman: 'shaman',
+  Warlock: 'warlock',
+  Warrior: 'warrior',
+};
 
 const raiderIOUrl =
   'https://raider.io/api/v1/guilds/profile?region=us&realm=area%2052&name=stay%20mad&fields=raid_progression%2Craid_rankings';
 
+const charDataUrl = `https://raider.io/api/v1/characters/profile?region=us&realm=area%2052&name=`;
+
 const Home = () => {
-  const [userData, setUserData] = useState([]);
+  const [raidProgressData, setRaidProgressData] = useState([]);
+  const [guildRosterData, setGuildRosterData] = useState([]);
 
   useEffect(() => {
     const raidData = [];
@@ -26,11 +47,39 @@ const Home = () => {
             rankings: raidRanks,
           });
         }
-        setUserData(raidData);
+        setRaidProgressData(raidData);
       })
       .catch((err) => {
         console.error(err);
       });
+  }, []);
+
+  useEffect(() => {
+    let charData = [];
+    let promises = [];
+
+    raidRoster.forEach((member) => {
+      promises.push(
+        axios
+          .get(`${charDataUrl}${member.characterName}`)
+          .then((res) => {
+            charData.push({
+              displayName: member.displayName,
+              charName: res.data.name,
+              className: res.data.class,
+              charImg: res.data.thumbnail_url,
+              charRole: res.data.active_spec_role,
+            });
+          })
+          .catch((err) => {
+            console.error(err);
+          })
+      );
+    });
+
+    Promise.all(promises).then(() => {
+      setGuildRosterData(charData);
+    });
   }, []);
 
   const needSpec = [];
@@ -56,7 +105,7 @@ const Home = () => {
     <div className='home-container'>
       <div className='progress-container'>
         <h1>Raid Progress</h1>
-        {userData.map((raid, index) => (
+        {raidProgressData.map((raid, index) => (
           <div
             key={index}
             className='raid-card'
@@ -91,6 +140,48 @@ const Home = () => {
         <div className='recruiting-icons'>
           {needSpec.map(({ name, recruitng, img }, index) => (
             <img key={index} src={images[img].default} alt='spec icon' />
+          ))}
+        </div>
+      </div>
+      <div className='previous-progress-container'>
+        <h1>Previous Tiers</h1>
+        <table>
+          <thead>
+            <tr>
+              <th colSpan='1' className='first-th'>
+                Raid
+              </th>
+              <th colSpan='1'>Region</th>
+              <th colSpan='1'>Realm</th>
+            </tr>
+          </thead>
+          <tbody>
+            {previousRaids.map(({ raidName, regionRank, realmRank }, index) => (
+              <tr key={index}>
+                <td className='raid-label'>{raidName}</td>
+                <td>{regionRank}</td>
+                <td>{realmRank}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className='roster-container'>
+        <h1>Roster</h1>
+        <div className='character-cards'>
+          {guildRosterData.map((member, index) => (
+            <div key={index} className='character-card'>
+              <h4 className={classColors[member.className]}>
+                {member.displayName}
+              </h4>
+              <a
+                href={`https://www.warcraftlogs.com/character/us/area-52/${member.charName}`}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img src={member.charImg} alt='character portrait' />
+              </a>
+            </div>
           ))}
         </div>
       </div>

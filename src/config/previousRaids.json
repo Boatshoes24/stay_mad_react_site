@@ -1,0 +1,47 @@
+[
+  {
+    "raidName": "Ny'alotha",
+    "regionRank": 152,
+    "realmRank": 13
+  },
+  {
+    "raidName": "Eternal Palace",
+    "regionRank": 219,
+    "realmRank": 19
+  },
+  {
+    "raidName": "Battle of Dazar'alor",
+    "regionRank": 334,
+    "realmRank": 22
+  },
+  {
+    "raidName": "Uldir",
+    "regionRank": 369,
+    "realmRank": 24
+  },
+  {
+    "raidName": "Nighthold",
+    "regionRank": 353,
+    "realmRank": 30
+  },
+  {
+    "raidName": "Trial of Valor",
+    "regionRank": 323,
+    "realmRank": 26
+  },
+  {
+    "raidName": "Emerald Nightmare",
+    "regionRank": 303,
+    "realmRank": 25
+  },
+  {
+    "raidName": "Hellfire Citadel",
+    "regionRank": 248,
+    "realmRank": 24
+  },
+  {
+    "raidName": "Blackrock Foundry",
+    "regionRank": 421,
+    "realmRank": 26
+  }
+]

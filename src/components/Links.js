@@ -5,6 +5,7 @@ import {
   BsTwitch,
   BsCardImage,
   BsPencilSquare,
+  BsHouseDoor,
 } from 'react-icons/bs';
 import { IoBarChartOutline } from 'react-icons/io5';
 import '../css/links.css';
@@ -13,6 +14,14 @@ const Links = () => {
   return (
     <div className='navbar'>
       <ul>
+        <li>
+          <div className='link-container'>
+            <Link to='/'>
+              <BsHouseDoor />
+              <span>Home</span>
+            </Link>
+          </div>
+        </li>
         <li>
           <div className='link-container'>
             <Link to='/about'>

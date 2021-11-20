@@ -5,22 +5,13 @@
   flex-wrap: wrap;
   text-align: center;
   margin: 0 auto;
+  color: #777;
 }
 
-/* .progress-container,
-.recruiting-container {
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0;
-  width: 400px;
-  height: 100%;
-} */
-
 .progress-container,
-.recruiting-container {
+.recruiting-container,
+.previous-progress-container,
+.roster-container {
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -33,14 +24,18 @@
 }
 
 .progress-container h1,
-.recruiting-container h1 {
+.recruiting-container h1,
+.previous-progress-container h1,
+.roster-container h1 {
   margin-bottom: 12px;
   margin-top: 10px;
   padding: 5px;
   width: 100%;
   border-bottom: 1px solid #333;
   letter-spacing: 3px;
-  color: #777;
+  /* color: #777;
+  font-weight: 400; */
+  color: rgba(4, 255, 255, 1);
   font-weight: 400;
 }
 
@@ -49,7 +44,7 @@
   height: 150px;
   font-size: 20px;
   margin: 5px auto;
-  color: #eee;
+  color: #aaa;
   vertical-align: middle;
   display: inline-block;
   border: 1px solid black;
@@ -74,12 +69,16 @@
   font-size: 1.2em;
   margin-bottom: 3px;
   font-weight: 400;
-  color: #ccc;
+  color: #777;
   text-shadow: 1px 1px 0 black;
 }
 
+.card-text h3 {
+  color: #777;
+}
+
 .raid-ranks-value {
-  color: white;
+  color: #ccc;
   font-weight: 700;
 }
 
@@ -94,7 +93,7 @@
 
 .card-text p {
   font-size: 26px;
-  color: #999;
+  color: #ccc;
   margin-top: -4px;
   text-shadow: 1px 1px 0 black;
 }
@@ -104,8 +103,65 @@
   margin: 0;
   padding: 0;
   font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recruiting-icons img {
   width: 20%;
+}
+
+.previous-progress-container table {
+  margin: 0 auto;
+  width: 100%;
+}
+
+table {
+  font-size: 1.4em;
+  padding: 4px;
+  color: #ccc;
+}
+
+th,
+.raid-label {
+  font-weight: 400;
+}
+
+th {
+  color: #aaa;
+}
+
+.raid-label {
+  text-align: left;
+  color: #777;
+}
+
+.first-th {
+  text-align: left;
+}
+
+.character-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  width: 20%;
+  position: relative;
+  border: 2px solid black;
+}
+
+.character-card h4 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.character-card img {
+  width: 100%;
 }
