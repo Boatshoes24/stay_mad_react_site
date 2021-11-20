@@ -1,0 +1,13 @@
+.guild-info-container {
+  text-align: left;
+  width: 100%;
+  max-width: 1400px;
+  color: #aaa;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.guild-info-container ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}

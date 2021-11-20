@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Blood Death Knight",
+    "recruiting": false,
+    "img": "dk-blood.jpg"
+  },
+  {
+    "name": "Unholy Death Knight",
+    "recruiting": true,
+    "img": "dk-unholy.jpg"
+  },
+  {
+    "name": "Frost Death Knight",
+    "recruiting": true,
+    "img": "dk-frost.jpg"
+  },
+  {
+    "name": "Havoc Demon Hunter",
+    "recruiting": true,
+    "img": "dh-havoc.jpg"
+  },
+  {
+    "name": "Vengeance Demon Hunter",
+    "recruiting": false,
+    "img": "dh-vengeance.jpg"
+  },
+  {
+    "name": "Balance Druid",
+    "recruiting": true,
+    "img": "druid-balance.jpg"
+  },
+  {
+    "name": "Feral Druid",
+    "recruiting": false,
+    "img": "druid-feral.jpg"
+  },
+  {
+    "name": "Guardian Druid",
+    "recruiting": false,
+    "img": "druid-guardian.jpg"
+  },
+  {
+    "name": "Restoration Druid",
+    "recruiting": false,
+    "img": "druid-resto.jpg"
+  },
+  {
+    "name": "Beast Mastery Hunter",
+    "recruiting": true,
+    "img": "hunter-bm.jpg"
+  },
+  {
+    "name": "Marksmanship Hunter",
+    "recruiting": true,
+    "img": "hunter-mm.jpg"
+  },
+  {
+    "name": "Survival Hunter",
+    "recruiting": false,
+    "img": "hunter-survival.jpg"
+  },
+  {
+    "name": "Arcane Mage",
+    "recruiting": true,
+    "img": "mage-arcane.jpg"
+  },
+  {
+    "name": "Fire Mage",
+    "recruiting": true,
+    "img": "mage-fire.jpg"
+  },
+  {
+    "name": "Frost Mage",
+    "recruiting": true,
+    "img": "mage-frost.jpg"
+  },
+  {
+    "name": "Brewmaster Monk",
+    "recruiting": false,
+    "img": "monk-brm.jpg"
+  },
+  {
+    "name": "Mistweaver Monk",
+    "recruiting": false,
+    "img": "monk-mw.jpg"
+  },
+  {
+    "name": "Windwalker Monk",
+    "recruiting": false,
+    "img": "monk-ww.jpg"
+  },
+  {
+    "name": "Holy Paladin",
+    "recruiting": true,
+    "img": "paladin-holy.jpg"
+  },
+  {
+    "name": "Protection Paladin",
+    "recruiting": false,
+    "img": "paladin-prot.jpg"
+  },
+  {
+    "name": "Retribution Paladin",
+    "recruiting": false,
+    "img": "paladin-ret.jpg"
+  },
+  {
+    "name": "Discipline Priest",
+    "recruiting": false,
+    "img": "priest-disc.jpg"
+  },
+  {
+    "name": "Holy Priest",
+    "recruiting": false,
+    "img": "priest-holy.jpg"
+  },
+  {
+    "name": "Shadow Priest",
+    "recruiting": true,
+    "img": "priest-shadow.jpg"
+  },
+  {
+    "name": "Assassination Rogue",
+    "recruiting": false,
+    "img": "rogue-ass.jpg"
+  },
+  {
+    "name": "Outlaw Rogue",
+    "recruiting": false,
+    "img": "rogue-outlaw.jpg"
+  },
+  {
+    "name": "Subtlety Rogue",
+    "recruiting": false,
+    "img": "rogue-sub.jpg"
+  },
+  {
+    "name": "Elemental Shaman",
+    "recruiting": false,
+    "img": "shaman-ele.jpg"
+  },
+  {
+    "name": "Enhancement Shaman",
+    "recruiting": false,
+    "img": "shaman-enhance.jpg"
+  },
+  {
+    "name": "Restoration Shaman",
+    "recruiting": false,
+    "img": "shaman-resto.jpg"
+  },
+  {
+    "name": "Affliction Warlock",
+    "recruiting": false,
+    "img": "warlock-aff.jpg"
+  },
+  {
+    "name": "Demonology Warlock",
+    "recruiting": false,
+    "img": "warlock-demo.jpg"
+  },
+  {
+    "name": "Destruction Warlock",
+    "recruiting": false,
+    "img": "warlock-destro.jpg"
+  },
+  {
+    "name": "Arms Warrior",
+    "recruiting": true,
+    "img": "warrior-arms.jpg"
+  },
+  {
+    "name": "Fury Warrior",
+    "recruiting": true,
+    "img": "warrior-fury.jpg"
+  },
+  {
+    "name": "Protection Warrior",
+    "recruiting": false,
+    "img": "warrior-prot.jpg"
+  }
+]

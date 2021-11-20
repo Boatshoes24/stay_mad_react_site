@@ -1,0 +1,64 @@
+[
+  {
+    "twitchName": "Illmage_",
+    "displayName": "Illmage",
+    "role": "dps",
+    "charClass": "mage"
+  },
+
+  {
+    "twitchName": "showduh",
+    "displayName": "Showduh",
+    "role": "dps",
+    "charClass": "hunter"
+  },
+
+  {
+    "twitchName": "deliimeat",
+    "displayName": "Deli",
+    "role": "healer",
+    "charClass": "shaman"
+  },
+
+  {
+    "twitchName": "zarkion",
+    "displayName": "Zark",
+    "role": "dps",
+    "charClass": "warrior"
+  },
+
+  {
+    "twitchName": "thalliumz",
+    "displayName": "Redstars",
+    "role": "dps",
+    "charClass": "shaman"
+  },
+
+  {
+    "twitchName": "patches_tv",
+    "displayName": "Zethek",
+    "role": "dps",
+    "charClass": "hunter"
+  },
+
+  {
+    "twitchName": "getthatgoat",
+    "displayName": "Shoes",
+    "role": "tank",
+    "charClass": "dk"
+  },
+
+  {
+    "twitchName": "krazykraka0",
+    "displayName": "Kwazy",
+    "role": "healer",
+    "charClass": "priest"
+  },
+
+  {
+    "twitchName": "rollow55",
+    "displayName": "Rollow",
+    "role": "tank",
+    "charClass": "monk"
+  }
+]
