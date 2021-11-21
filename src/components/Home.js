@@ -139,7 +139,10 @@ const Home = () => {
         <h1>Recruiting</h1>
         <div className='recruiting-icons'>
           {needSpec.map(({ name, recruitng, img }, index) => (
-            <img key={index} src={images[img].default} alt='spec icon' />
+            <div key={index} className='tooltip'>
+              <img src={images[img].default} alt='spec icon' title={name} />
+              <span className='tooltip-text'>{name}</span>
+            </div>
           ))}
         </div>
       </div>
