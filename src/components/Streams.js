@@ -1,4 +1,3 @@
-import '../css/streams.css';
 import tankIcon from '../images/philmod-tank.png';
 import healerIcon from '../images/philmod-healer.png';
 import dpsIcon from '../images/philmod-dps.png';
@@ -15,7 +14,7 @@ import shamanIcon from '../images/class-shaman.png';
 import warlockIcon from '../images/class-warlock.png';
 import warriorIcon from '../images/class-warrior.png';
 import questionIcon from '../images/class-unknown.png';
-const streamsJSON = require('../config/streams.json');
+import streamsJSON from '../config/streams.json';
 
 const Streams = () => {
   return (
@@ -44,7 +43,7 @@ const Streams = () => {
                     }
                     alt='tank role icon'
                   />
-                  <span className='emphasized-item'>{displayName}</span>
+                  <span>{displayName}</span>
                   <img
                     className='class-icons'
                     src={

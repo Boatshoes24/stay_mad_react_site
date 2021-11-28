@@ -1,5 +1,3 @@
-import '../css/guildinformation.css';
-
 const GuildInformation = () => {
   return (
     <div className='guild-info-container'>
@@ -14,7 +12,7 @@ const GuildInformation = () => {
       </p>
       <br />
       <br />
-      <h2 className='emphasized-item'>Our Expectations</h2>
+      <h2>Our Expectations</h2>
       <br />
       <p>
         Most of our expectations are similar to any others you'll be accustomed
@@ -34,7 +32,7 @@ const GuildInformation = () => {
       </p>
       <br />
       <br />
-      <h2 className='emphasized-item'>What You Can Expect From Us</h2>
+      <h2>What You Can Expect From Us</h2>
       <br />
       <p>
         Having a tight-knit group is one of our major appeals and most people
@@ -47,16 +45,16 @@ const GuildInformation = () => {
       </p>
       <br />
       <br />
-      <h2 className='emphasized-item'>Raid Information</h2>
+      <h2>Raid Information</h2>
       <br />
       <p>Here is our general information:</p>
       <ul>
         <li>
-          <span className='emphasized-item'>Days: </span>
+          <span>Days: </span>
           Tuesday, Thursday, and Sunday
         </li>
         <li>
-          <span className='emphasized-item'>Times: </span>
+          <span>Times: </span>
           9PM - 1AM EST on Tues/Thurs and 9PM-12AM EST on Sun
         </li>
         <li>

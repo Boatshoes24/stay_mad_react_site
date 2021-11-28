@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+.navbar {
+  width: 100%;
+  background-color: $container_background_color;
+  ul {
+    border-top: 1px solid $grey900;
+    border-bottom: 1px solid $grey900;
+  }
+  li {
+    text-align: center;
+    display: inline-block;
+    width: 16.5%;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 5px;
+    span {
+      color: $grey700;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    font-size: 1.2rem;
+    color: $grey700;
+    margin: 0 auto;
+  }
+}
+
+#link1:hover * {
+  color: $cyan;
+}
+
+#link2:hover * {
+  color: rgb(139, 255, 255);
+}
+
+#link3:hover * {
+  color: rgb(170, 255, 255);
+}
+
+#link4:hover * {
+  color: #fdbaba;
+}
+
+#link5:hover * {
+  color: #ff9898;
+}
+
+#link6:hover * {
+  color: #fd6565;
+}

@@ -1,26 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../css/home.css';
-import '../css/classcolor.css';
 import classes from '../config/recruitmentNeeds';
 import raids from '../config/raids';
-const previousRaids = require('../config/previousRaids.json');
-const raidRoster = require('../config/raidRoster.json');
-
-const classColors = {
-  'Death Knight': 'death-knight',
-  'Demon Hunter': 'demon-hunter',
-  Druid: 'druid',
-  Hunter: 'hunter',
-  Mage: 'mage',
-  Monk: 'monk',
-  Paladin: 'paladin',
-  Priest: 'priest',
-  Rogue: 'rogue',
-  Shaman: 'shaman',
-  Warlock: 'warlock',
-  Warrior: 'warrior',
-};
+import classLabels from '../config/classLabels.json';
+import previousRaids from '../config/previousRaids.json';
+import raidRoster from '../config/raidRoster.json';
 
 const raiderIOUrl =
   'https://raider.io/api/v1/guilds/profile?region=us&realm=area%2052&name=stay%20mad&fields=raid_progression%2Craid_rankings';
@@ -114,6 +98,10 @@ const Home = () => {
               backgroundSize: 'cover',
             }}
           >
+            <div className='card-text'>
+              <h3>{raids[index].display}</h3>
+              <p>{raid.progress || '0'}</p>
+            </div>
             <div className='raid-ranks'>
               <h2 className='raid-ranks-ranking'>
                 Region:{' '}
@@ -128,10 +116,6 @@ const Home = () => {
                 </span>
               </h2>
             </div>
-            <div className='card-text'>
-              <h3>{raids[index].display}</h3>
-              <p>{raid.progress || '0'}</p>
-            </div>
           </div>
         ))}
       </div>
@@ -139,10 +123,12 @@ const Home = () => {
         <h1>Recruiting</h1>
         <div className='recruiting-icons'>
           {needSpec.map(({ name, recruitng, img }, index) => (
-            <div key={index} className='tooltip'>
-              <img src={images[img].default} alt='spec icon' title={name} />
-              <span className='tooltip-text'>{name}</span>
-            </div>
+            <img
+              key={index}
+              src={images[img].default}
+              alt='spec icon'
+              title={name}
+            />
           ))}
         </div>
       </div>
@@ -170,11 +156,11 @@ const Home = () => {
         </table>
       </div>
       <div className='roster-container'>
-        <h1>Roster</h1>
+        <h1>Raid Team</h1>
         <div className='character-cards'>
           {guildRosterData.map((member, index) => (
             <div key={index} className='character-card'>
-              <h4 className={classColors[member.className]}>
+              <h4 className={classLabels[0][member.className]}>
                 {member.displayName}
               </h4>
               <a

@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.guild-application-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  p {
+    text-align: left;
+  }
+
+  form {
+    margin-top: 60px;
+  }
+  input {
+    text-decoration: none;
+    font-size: 1.8rem;
+    background-color: $cyan;
+    border: 1px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    &:hover {
+      background-color: $red;
+      cursor: pointer;
+    }
+  }
+}

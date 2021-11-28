@@ -1,5 +1,3 @@
-import '../css/guildapplication.css';
-
 const GuildApplication = () => {
   return (
     <div className='guild-application-container'>
@@ -14,7 +12,7 @@ const GuildApplication = () => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <input type='submit' value='Guild Application' />
+        <input type='submit' value='Guild Application'></input>
       </form>
     </div>
   );

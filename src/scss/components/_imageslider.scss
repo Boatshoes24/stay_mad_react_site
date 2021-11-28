@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+
+.image-slider-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.carousel .thumb {
+  border: 2px solid #333;
+}
+.carousel .thumb:focus,
+.carousel .thumb.selected {
+  border: 2px solid $cyan;
+  outline: none;
+}
+
+.carousel .thumb:hover {
+  border: 2px solid $red;
+}
+.carousel .thumb img {
+  vertical-align: top;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 960px) {
+  .carousel .control-dots {
+    bottom: 0;
+  }
+}
+.carousel .control-dots .dot {
+  background: $grey400;
+}
+.carousel .control-dots .dot:hover {
+  background: $red;
+}
+
+.carousel .control-dots .dot.selected {
+  background: $cyan;
+}

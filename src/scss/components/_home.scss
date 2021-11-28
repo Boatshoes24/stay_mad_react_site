@@ -1,0 +1,171 @@
+@use '../abstracts/' as *;
+
+.home-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.roster-container,
+.progress-container,
+.previous-progress-container,
+.recruiting-container {
+  width: 100%;
+  max-width: 500px;
+  min-width: 320px;
+  padding: 5px;
+  h1 {
+    font-weight: 600;
+    @include textGradient();
+    padding: 5px;
+    font-size: 2.3rem;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid $grey900;
+    margin-bottom: 15px;
+  }
+}
+
+.raid-card {
+  min-height: 150px;
+  margin-bottom: 10px;
+  position: relative;
+  h2 {
+    background-color: $textBackground;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 3px;
+  }
+  h3 {
+    background-color: $textBackground;
+    width: 100%;
+    padding-top: 3px;
+  }
+  p {
+    background-color: $textBackground;
+    width: 100%;
+    padding-bottom: 3px;
+  }
+}
+
+.raid-ranks {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-text {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.recruiting-container {
+}
+
+.recruiting-icons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    width: 100%;
+    max-width: 85px;
+    margin: 1px;
+  }
+}
+
+.character-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 100%;
+}
+
+.character-card {
+  position: relative;
+  h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $textBackground;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  img {
+    width: 100%;
+    max-width: 85px;
+  }
+}
+
+.previous-progress-container {
+  table {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.first-th,
+.raid-label {
+  text-align: left;
+}
+
+.raid-label,
+th {
+  color: $grey700;
+}
+
+.death-knight {
+  color: $dk_color;
+}
+
+.demon-hunter {
+  color: $dh_color;
+}
+
+.druid {
+  color: $druid_color;
+}
+
+.hunter {
+  color: $hunter_color;
+}
+
+.mage {
+  color: $mage_color;
+}
+
+.monk {
+  color: $monk_color;
+}
+
+.priest {
+  color: $priest_color;
+}
+
+.paladin {
+  color: $paladin_color;
+}
+
+.rogue {
+  color: $rogue_color;
+}
+
+.shaman {
+  color: $shaman_color;
+}
+
+.warlock {
+  color: $warlock_color;
+}
+
+.warrior {
+  color: $warrior_color;
+}

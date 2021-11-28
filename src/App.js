@@ -26,8 +26,8 @@ function App() {
             <Route path='/apply' element={<GuildApplication />} />
           </Routes>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </Router>
   );
 }

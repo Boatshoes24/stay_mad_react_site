@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import '../css/logoheader.css';
 
 const LogoHeader = () => {
   return (

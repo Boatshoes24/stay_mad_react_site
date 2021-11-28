@@ -1,0 +1,10 @@
+@use './colors' as *;
+
+@mixin textGradient($per1: 35%, $per2: 60%) {
+  background: linear-gradient(80deg, $cyan $per1, #fd6565 $per2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+$bottom-padding: -10px auto 0 auto;

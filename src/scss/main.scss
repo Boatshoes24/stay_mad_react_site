@@ -1,0 +1,56 @@
+@use './abstracts' as *;
+@use './components';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: $page_background_color;
+  font-family: $opensans;
+  color: $grey100;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  min-height: 99vh;
+}
+
+.current-content {
+  width: 98%;
+  margin: $bottom-padding;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: $grey900;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $cyan;
+  background: linear-gradient(80deg, #fd6565 20%, $cyan 80%);
+}
