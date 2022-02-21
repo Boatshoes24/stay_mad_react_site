@@ -1,1 +1,1 @@
-For my first React project I have created a website for the guild <Stay Mad> on US Area 52. The current tier rankings on the home page as well as the roster icons are all fetched from the public raider.io API. 
+For my first React project I have created a website for the guild Stay Mad on US Area 52. The current tier rankings on the home page as well as the roster icons are all fetched from the public raider.io API. 
