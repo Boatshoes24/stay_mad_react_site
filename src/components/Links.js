@@ -24,7 +24,7 @@ const Links = () => {
               splitLocation[1] === '' ? 'active-link1' : ''
             } link-container`}
           >
-            <Link exact to='/'>
+            <Link to='/'>
               <FiHome />
               <span>Home</span>
             </Link>

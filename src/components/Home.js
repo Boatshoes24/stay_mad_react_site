@@ -85,6 +85,8 @@ const Home = () => {
     require.context('../images', false, /\.(png|jpe?g|svg)$/)
   );
 
+  needSpec.map(({ name, recruitng, img }, index) => console.log(images[img]));
+
   return (
     <div className='home-container'>
       <div className='progress-container'>
@@ -123,12 +125,7 @@ const Home = () => {
         <h1>Recruiting</h1>
         <div className='recruiting-icons'>
           {needSpec.map(({ name, recruitng, img }, index) => (
-            <img
-              key={index}
-              src={images[img].default}
-              alt='spec icon'
-              title={name}
-            />
+            <img key={index} src={images[img]} alt='spec icon' title={name} />
           ))}
         </div>
       </div>
