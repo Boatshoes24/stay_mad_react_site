@@ -85,11 +85,6 @@ const Home = () => {
     require.context('../images', false, /\.(png|jpe?g|svg)$/)
   );
 
-  raidProgressData.map((raid, index) => {
-    console.log(raid, index);
-    return true;
-  });
-
   return (
     <div className='home-container'>
       <div className='progress-container'>
