@@ -11,12 +11,12 @@
   },
   {
     "name": "Frost Death Knight",
-    "recruiting": false,
+    "recruiting": true,
     "img": "dk-frost.jpg"
   },
   {
     "name": "Havoc Demon Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "img": "dh-havoc.jpg"
   },
   {
@@ -46,32 +46,32 @@
   },
   {
     "name": "Beast Mastery Hunter",
-    "recruiting": false,
+    "recruiting": true,
     "img": "hunter-bm.jpg"
   },
   {
     "name": "Marksmanship Hunter",
-    "recruiting": false,
+    "recruiting": true,
     "img": "hunter-mm.jpg"
   },
   {
     "name": "Survival Hunter",
-    "recruiting": false,
+    "recruiting": true,
     "img": "hunter-survival.jpg"
   },
   {
     "name": "Arcane Mage",
-    "recruiting": true,
+    "recruiting": false,
     "img": "mage-arcane.jpg"
   },
   {
     "name": "Fire Mage",
-    "recruiting": true,
+    "recruiting": false,
     "img": "mage-fire.jpg"
   },
   {
     "name": "Frost Mage",
-    "recruiting": true,
+    "recruiting": false,
     "img": "mage-frost.jpg"
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "Windwalker Monk",
-    "recruiting": false,
+    "recruiting": true,
     "img": "monk-ww.jpg"
   },
   {
@@ -151,17 +151,17 @@
   },
   {
     "name": "Affliction Warlock",
-    "recruiting": false,
+    "recruiting": true,
     "img": "warlock-aff.jpg"
   },
   {
     "name": "Demonology Warlock",
-    "recruiting": false,
+    "recruiting": true,
     "img": "warlock-demo.jpg"
   },
   {
     "name": "Destruction Warlock",
-    "recruiting": false,
+    "recruiting": true,
     "img": "warlock-destro.jpg"
   },
   {

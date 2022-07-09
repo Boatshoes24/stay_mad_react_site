@@ -24,21 +24,14 @@
     "twitchName": "zarkion",
     "displayName": "Zark",
     "role": "dps",
-    "charClass": "warrior"
-  },
-
-  {
-    "twitchName": "thalliumz",
-    "displayName": "Redstars",
-    "role": "dps",
-    "charClass": "shaman"
+    "charClass": "hunter"
   },
 
   {
     "twitchName": "patches_tv",
     "displayName": "Zethek",
     "role": "dps",
-    "charClass": "hunter"
+    "charClass": "warlock"
   },
 
   {
@@ -60,5 +53,33 @@
     "displayName": "Rollow",
     "role": "tank",
     "charClass": "monk"
+  },
+
+  {
+    "twitchName": "sparecash",
+    "displayName": "Musings",
+    "role": "dps",
+    "charClass": "mage"
+  },
+
+  {
+    "twitchName": "magejulook",
+    "displayName": "Crunkio",
+    "role": "dps",
+    "charClass": "warlock"
+  },
+
+  {
+    "twitchName": "seeniatv",
+    "displayName": "Seenia",
+    "role": "dps",
+    "charClass": "shaman"
+  },
+
+  {
+    "twitchName": "bronzespanks",
+    "displayName": "Bronze",
+    "role": "healer",
+    "charClass": "druid"
   }
 ]
