@@ -21,6 +21,7 @@ const Home = () => {
       .get(raiderIOUrl)
       .then((res) => {
         for (const [key, value] of Object.entries(res.data.raid_progression)) {
+          if (key.includes('fated')) continue;
           let raidRanks = {};
           if (res.data.raid_rankings[key]) {
             raidRanks = { ...raidRanks, ...res.data.raid_rankings[key] };
