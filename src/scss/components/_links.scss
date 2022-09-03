@@ -20,6 +20,54 @@
     a {
       text-decoration: none;
     }
+
+    .active-link1 * {
+      color: #04ffff !important;
+    }
+
+    .active-link2 * {
+      color: #8bffff !important;
+    }
+
+    .active-link3 * {
+      color: #aaffff !important;
+    }
+
+    .active-link4 * {
+      color: #fdbaba !important;
+    }
+
+    .active-link5 * {
+      color: #ff9898 !important;
+    }
+
+    .active-link6 * {
+      color: #fd6565 !important;
+    }
+
+    #link1:hover * {
+      color: $cyan;
+    }
+
+    #link2:hover * {
+      color: rgb(139, 255, 255);
+    }
+
+    #link3:hover * {
+      color: rgb(170, 255, 255);
+    }
+
+    #link4:hover * {
+      color: #fdbaba;
+    }
+
+    #link5:hover * {
+      color: #ff9898;
+    }
+
+    #link6:hover * {
+      color: #fd6565;
+    }
   }
   svg {
     display: block;
@@ -30,28 +78,4 @@
     color: $grey700;
     margin: 0 auto;
   }
-}
-
-#link1:hover * {
-  color: $cyan;
-}
-
-#link2:hover * {
-  color: rgb(139, 255, 255);
-}
-
-#link3:hover * {
-  color: rgb(170, 255, 255);
-}
-
-#link4:hover * {
-  color: #fdbaba;
-}
-
-#link5:hover * {
-  color: #ff9898;
-}
-
-#link6:hover * {
-  color: #fd6565;
 }
