@@ -18,7 +18,11 @@ const Home = () => {
   useEffect(() => {
     const raidData = [];
     axios
-      .get(raiderIOUrl)
+      .get(raiderIOUrl, {
+        validateStatus: function (status) {
+          return status >= 200 && status < 300;
+        },
+      })
       .then((res) => {
         for (const [key, value] of Object.entries(res.data.raid_progression)) {
           if (key.includes('fated')) continue;
@@ -35,7 +39,16 @@ const Home = () => {
         setRaidProgressData(raidData);
       })
       .catch((err) => {
-        console.error(err);
+        if (err.response) {
+          console.error(err.response.data);
+          console.error(err.response.status);
+          console.error(err.response.headers);
+        } else if (err.request) {
+          console.error(err.request);
+        } else {
+          console.error('Error', err.message);
+        }
+        console.error(err.config);
       });
   }, []);
 
@@ -46,7 +59,11 @@ const Home = () => {
     raidRoster.forEach((member) => {
       promises.push(
         axios
-          .get(`${charDataUrl}${member.characterName}`)
+          .get(`${charDataUrl}${member.characterName}`, {
+            validateStatus: function (status) {
+              return status >= 200 && status < 300;
+            },
+          })
           .then((res) => {
             charData.push({
               displayName: member.displayName,
@@ -57,7 +74,16 @@ const Home = () => {
             });
           })
           .catch((err) => {
-            console.error(err);
+            if (err.response) {
+              console.error(err.response.data);
+              console.error(err.response.status);
+              console.error(err.response.headers);
+            } else if (err.request) {
+              console.error(err.request);
+            } else {
+              console.error('Error', err.message);
+            }
+            console.error(err.config);
           })
       );
     });
@@ -86,7 +112,7 @@ const Home = () => {
     require.context('../images', false, /\.(png|jpe?g|svg)$/)
   );
 
-  needSpec.map(({ name, recruitng, img }, index) => console.log(images[img]));
+  // needSpec.map(({ name, recruitng, img }, index) => console.log(images[img]));
 
   return (
     <div className='home-container'>

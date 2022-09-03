@@ -17,7 +17,7 @@
     "twitchName": "deliimeat",
     "displayName": "Deli",
     "role": "healer",
-    "charClass": "shaman"
+    "charClass": "druid"
   },
 
   {
@@ -30,8 +30,8 @@
   {
     "twitchName": "patches_tv",
     "displayName": "Zethek",
-    "role": "dps",
-    "charClass": "warlock"
+    "role": "healer",
+    "charClass": "priest"
   },
 
   {
@@ -59,7 +59,7 @@
     "twitchName": "sparecash",
     "displayName": "Musings",
     "role": "dps",
-    "charClass": "mage"
+    "charClass": "dk"
   },
 
   {
@@ -70,16 +70,9 @@
   },
 
   {
-    "twitchName": "seeniatv",
-    "displayName": "Seenia",
-    "role": "dps",
-    "charClass": "shaman"
-  },
-
-  {
     "twitchName": "bronzespanks",
     "displayName": "Bronze",
     "role": "healer",
-    "charClass": "druid"
+    "charClass": "monk"
   }
 ]

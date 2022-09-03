@@ -8,7 +8,7 @@
     "displayName": "Rollow"
   },
   {
-    "characterName": "Pridestalkér",
+    "characterName": "Pridewalker",
     "displayName": "Pride"
   },
   {
@@ -44,23 +44,15 @@
     "displayName": "Krazy"
   },
   {
-    "characterName": "Khadgay",
-    "displayName": "Khadgay"
-  },
-  {
-    "characterName": "Røndk",
-    "displayName": "Ron"
-  },
-  {
     "characterName": "Nicp",
-    "displayName": "Nick"
+    "displayName": "Nicp"
   },
   {
     "characterName": "Delimeat",
     "displayName": "Deli"
   },
   {
-    "characterName": "Zethek",
+    "characterName": "Nethk",
     "displayName": "Zethek"
   },
   {
@@ -84,7 +76,19 @@
     "displayName": "Bronze"
   },
   {
-    "characterName": "Seeniawf",
-    "displayName": "Seenia"
+    "characterName": "Bingqílín",
+    "displayName": "Bingqílín"
+  },
+  {
+    "characterName": "Mammal",
+    "displayName": "Mammal"
+  },
+  {
+    "characterName": "Velgandh",
+    "displayName": "Velgandh"
+  },
+  {
+    "characterName": "Duffmann",
+    "displayName": "Duffmann"
   }
 ]

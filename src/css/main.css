@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
 .navbar {
   width: 100%;
   background-color: #161616;
@@ -31,40 +31,16 @@
   margin: 0 auto;
 }
 
-.active-link1 * {
-  color: #04ffff !important;
-}
-
-.active-link2 * {
-  color: #8bffff !important;
-}
-
-.active-link3 * {
-  color: #aaffff !important;
-}
-
-.active-link4 * {
-  color: #fdbaba !important;
-}
-
-.active-link5 * {
-  color: #ff9898 !important;
-}
-
-.active-link6 * {
-  color: #fd6565 !important;
-}
-
 #link1:hover * {
-  color: #04ffff;
+  color: rgb(4, 255, 255);
 }
 
 #link2:hover * {
-  color: #8bffff;
+  color: rgb(139, 255, 255);
 }
 
 #link3:hover * {
-  color: #aaffff;
+  color: rgb(170, 255, 255);
 }
 
 #link4:hover * {
@@ -114,7 +90,7 @@
 .previous-progress-container h1,
 .recruiting-container h1 {
   font-weight: 600;
-  background: linear-gradient(80deg, #04ffff 35%, #fd6565 60%);
+  background: linear-gradient(80deg, rgb(4, 255, 255) 35%, #fd6565 60%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -270,13 +246,13 @@ th {
   text-align: left;
 }
 .guild-info-container h2 {
-  background: linear-gradient(80deg, #04ffff 5%, #fd6565 25%);
+  background: linear-gradient(80deg, rgb(4, 255, 255) 5%, #fd6565 25%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .guild-info-container span {
-  color: #04ffff;
+  color: rgb(4, 255, 255);
 }
 .guild-info-container p {
   text-align: left;
@@ -297,7 +273,7 @@ th {
 
 .carousel .thumb:focus,
 .carousel .thumb.selected {
-  border: 2px solid #04ffff;
+  border: 2px solid rgb(4, 255, 255);
   outline: none;
 }
 
@@ -333,7 +309,7 @@ th {
 }
 
 .carousel .control-dots .dot.selected {
-  background: #04ffff;
+  background: rgb(4, 255, 255);
 }
 
 .stream-container {
@@ -355,25 +331,25 @@ th {
   border: 1px solid #333;
   background-color: black;
 }
-.stream-container iframe {
+.stream-container .react-player {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  height: 240px;
   text-align: center;
+  border-left: none;
+  border-right: none;
+  border-top: none;
   border-bottom: 1px solid #333;
 }
 .stream-container span {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 2px;
-  background: linear-gradient(80deg, #04ffff 25%, #fd6565 75%);
+  background: linear-gradient(80deg, rgb(4, 255, 255) 25%, #fd6565 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.stream-names {
+.stream-container .stream-names {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -382,22 +358,7 @@ th {
   justify-content: space-between;
   padding: 10px;
 }
-
-.stream-player {
-  border: none;
-}
-
-.stream-names {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.stream-names img {
+.stream-container .stream-names img {
   width: 24px;
   height: 24px;
 }
@@ -416,7 +377,7 @@ th {
 .guild-application-container input {
   text-decoration: none;
   font-size: 1.8rem;
-  background-color: #04ffff;
+  background-color: rgb(4, 255, 255);
   border: 1px solid black;
   padding: 15px 32px;
   text-align: center;
@@ -454,7 +415,7 @@ html {
 
 body {
   background-color: #121212;
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: "Open Sans", "sans-serif";
   color: #ccc;
   text-align: center;
 }
@@ -492,8 +453,6 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #04ffff;
-  background: linear-gradient(80deg, #fd6565 20%, #04ffff 80%);
-}
-
-/*# sourceMappingURL=main.css.map */
+  background: rgb(4, 255, 255);
+  background: linear-gradient(80deg, #fd6565 20%, rgb(4, 255, 255) 80%);
+}/*# sourceMappingURL=main.css.map */

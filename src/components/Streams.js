@@ -15,6 +15,7 @@ import warlockIcon from '../images/class-warlock.png';
 import warriorIcon from '../images/class-warrior.png';
 import questionIcon from '../images/class-unknown.png';
 import streamsJSON from '../config/streams.json';
+import ReactPlayer from 'react-player';
 
 const Streams = () => {
   return (
@@ -24,13 +25,22 @@ const Streams = () => {
           ({ twitchName, displayName, role, charClass }, index) => (
             <li key={index}>
               <div className='stream-window'>
-                <iframe
+                <ReactPlayer
                   title={twitchName}
-                  parent='localhost'
-                  className='stream-player'
-                  src={`https://player.twitch.tv/?channel=${twitchName}&parent=localhost&parent=staymad.netlify.app&muted=true&autoplay=false`}
-                  allowFullScreen={true}
-                ></iframe>
+                  className='react-player'
+                  url={`https://twitch.tv/${twitchName}`}
+                  width='100%'
+                  height='240px'
+                  config={{
+                    options: {
+                      parent: ['localhost', 'staymad.netlify.app'],
+                      allowfullscreen: true,
+                      autoplay: false,
+                      muted: true,
+                      theme: 'dark',
+                    },
+                  }}
+                />
                 <div className='stream-names'>
                   <img
                     className='role-icons'
