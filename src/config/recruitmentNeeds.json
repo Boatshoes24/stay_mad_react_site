@@ -6,12 +6,12 @@
   },
   {
     "name": "Unholy Death Knight",
-    "recruiting": true,
+    "recruiting": false,
     "img": "dk-unholy.jpg"
   },
   {
     "name": "Frost Death Knight",
-    "recruiting": true,
+    "recruiting": false,
     "img": "dk-frost.jpg"
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "name": "Survival Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "img": "hunter-survival.jpg"
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "name": "Shadow Priest",
-    "recruiting": true,
+    "recruiting": false,
     "img": "priest-shadow.jpg"
   },
   {
@@ -151,17 +151,17 @@
   },
   {
     "name": "Affliction Warlock",
-    "recruiting": true,
+    "recruiting": false,
     "img": "warlock-aff.jpg"
   },
   {
     "name": "Demonology Warlock",
-    "recruiting": true,
+    "recruiting": false,
     "img": "warlock-demo.jpg"
   },
   {
     "name": "Destruction Warlock",
-    "recruiting": true,
+    "recruiting": false,
     "img": "warlock-destro.jpg"
   },
   {

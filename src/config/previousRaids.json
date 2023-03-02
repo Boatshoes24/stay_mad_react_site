@@ -1,5 +1,20 @@
 [
   {
+    "raidName": "Sepulcher of the First Ones",
+    "regionRank": 90,
+    "realmRank": 14
+  },
+  {
+    "raidName": "Sanctum of Domination",
+    "regionRank": 132,
+    "realmRank": 13
+  },
+  {
+    "raidName": "Castle Nathria",
+    "regionRank": 126,
+    "realmRank": 13
+  },
+  {
     "raidName": "Ny'alotha",
     "regionRank": 152,
     "realmRank": 13

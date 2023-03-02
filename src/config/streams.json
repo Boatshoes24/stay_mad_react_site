@@ -7,31 +7,10 @@
   },
 
   {
-    "twitchName": "showduh",
-    "displayName": "Showduh",
-    "role": "dps",
-    "charClass": "hunter"
-  },
-
-  {
     "twitchName": "deliimeat",
     "displayName": "Deli",
     "role": "healer",
     "charClass": "druid"
-  },
-
-  {
-    "twitchName": "zarkion",
-    "displayName": "Zark",
-    "role": "dps",
-    "charClass": "hunter"
-  },
-
-  {
-    "twitchName": "patches_tv",
-    "displayName": "Zethek",
-    "role": "healer",
-    "charClass": "priest"
   },
 
   {
@@ -42,24 +21,10 @@
   },
 
   {
-    "twitchName": "krazykraka0",
-    "displayName": "Kwazy",
-    "role": "healer",
-    "charClass": "priest"
-  },
-
-  {
     "twitchName": "rollow55",
     "displayName": "Rollow",
     "role": "tank",
     "charClass": "monk"
-  },
-
-  {
-    "twitchName": "sparecash",
-    "displayName": "Musings",
-    "role": "dps",
-    "charClass": "dk"
   },
 
   {

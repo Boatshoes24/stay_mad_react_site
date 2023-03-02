@@ -1,17 +1,7 @@
 [
   {
-    "name": "castle-nathria",
-    "display": "Castle Nathria",
-    "img": "https://wow.zamimg.com/uploads/guide/seo/10246.jpg"
-  },
-  {
-    "name": "sanctum-of-domination",
-    "display": "Sanctum of Domination",
-    "img": "https://wow.zamimg.com/uploads/blog/images/23679-patch-9-1-loading-screens-tazavesh-and-sanctum-of-domination.jpg"
-  },
-  {
-    "name": "sepulcher-of-the-first-ones",
-    "display": "Sepulcher of the First Ones",
-    "img": "https://wow.zamimg.com/uploads/screenshots/normal/1044204.jpg"
+    "name": "vault-of-the-incarnates",
+    "display": "Vault of the Incarnates",
+    "img": "https://cdn1.dotesports.com/wp-content/uploads/2022/09/12062410/1089836-scaled.jpg"
   }
 ]
