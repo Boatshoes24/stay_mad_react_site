@@ -64,8 +64,8 @@ const GuildInformation = () => {
           Loot is handled in a form of Loot Council, but with more open
           communication
         </li>
-        <li>Sale runs on Monday &#40;gold only and optional&#41;</li>
-        <li>Alt runs on Sundays when prog is over &#40;also optional&#41;</li>
+        <li>Sale runs are &#40;gold only and optional&#41;</li>
+        <li>Alt runs, typically when prog is over &#40;also optional&#41;</li>
       </ul>
       <br />
       <br />
@@ -82,6 +82,7 @@ const GuildInformation = () => {
         <li>Your choice of Boss Mods</li>
         <li>Weak Auras</li>
         <li>Exorsus Raid Tools</li>
+        <li>RCLootCouncil</li>
       </ul>
     </div>
   );
