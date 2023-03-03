@@ -64,7 +64,7 @@ const GuildInformation = () => {
           Loot is handled in a form of Loot Council, but with more open
           communication
         </li>
-        <li>Sale runs are &#40;gold only and optional&#41;</li>
+        <li>Sale runs &#40;gold only and optional&#41;</li>
         <li>Alt runs, typically when prog is over &#40;also optional&#41;</li>
       </ul>
       <br />
