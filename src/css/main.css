@@ -150,6 +150,51 @@
   top: 0;
 }
 
+.recruiting-container hr {
+  width: 65%;
+  margin: 5px auto;
+  height: 1px;
+  border: none;
+  background: #333;
+}
+.recruiting-container .header {
+  color: sandybrown;
+  font-weight: 900;
+  text-align: center;
+  height: 30px;
+}
+.recruiting-container .raid-info-table {
+  margin: 0 auto;
+  width: 60%;
+}
+.recruiting-container .raid-info-table tr {
+  height: 20px;
+}
+.recruiting-container .raid-info-table .column-1 {
+  text-align: left;
+}
+.recruiting-container .raid-info-table .column-2 {
+  text-align: right;
+}
+.recruiting-container .recruiting-table {
+  margin: 0 auto;
+  width: 60%;
+}
+.recruiting-container .recruiting-table tr {
+  height: 30px;
+}
+.recruiting-container .recruiting-table .column-1 {
+  text-align: left;
+  font-weight: 700;
+}
+.recruiting-container .recruiting-table .column-2 {
+  text-align: right;
+}
+.recruiting-container .recruiting-table .column-2 img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
 .recruiting-icons {
   width: 100%;
   display: flex;
@@ -213,10 +258,6 @@ th {
 
 .druid {
   color: #ff7c0a;
-}
-
-.evoker {
-  color: #33937F
 }
 
 .hunter {

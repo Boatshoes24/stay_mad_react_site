@@ -64,7 +64,61 @@
   top: 0;
 }
 
+
 .recruiting-container {
+  hr {
+    width: 65%;
+    margin: 5px auto;
+    height: 1px;
+    border: none;
+    background: $grey900;
+  }
+
+  .header {
+    color: sandybrown;
+    font-weight: 900;
+    text-align: center;
+    height: 30px
+  }
+
+  .raid-info-table {
+    margin: 0 auto;
+    width: 60%;
+
+    tr {
+      height: 20px;
+    }
+
+    .column-1 {
+      text-align: left;
+    }
+
+    .column-2 {
+      text-align: right;
+    }
+  }
+  .recruiting-table {
+    margin: 0 auto;
+    width: 60%;
+
+    tr {
+      height: 30px;
+    }
+
+    .column-1 {
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .column-2 {
+      text-align: right;
+
+      img {
+        max-width: 30px;
+        max-height: 30px;
+      }
+    }
+  }
 }
 
 .recruiting-icons {

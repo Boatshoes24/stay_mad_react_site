@@ -5,6 +5,7 @@ import raids from '../config/raids';
 import classLabels from '../config/classLabels.json';
 import previousRaids from '../config/previousRaids.json';
 import raidRoster from '../config/raidRoster.json';
+import { Form } from 'react-router-dom';
 
 const raiderIOUrl =
   'https://raider.io/api/v1/guilds/profile?region=us&realm=area%2052&name=stay%20mad&fields=raid_progression%2Craid_rankings';
@@ -93,12 +94,22 @@ const Home = () => {
     });
   }, []);
 
-  const needSpec = [];
+  // const needSpec = [];
+  // classes.forEach((spec) => {
+  //   if (spec.recruiting === true) {
+  //     needSpec.push(spec);
+  //   }
+  // });
+
+  const needSpec = {}
   classes.forEach((spec) => {
-    if (spec.recruiting === true) {
-      needSpec.push(spec);
-    }
-  });
+    if (!needSpec[spec.class] && spec.recruiting === true) 
+      needSpec[spec.class] = []
+    if (spec.recruiting === true)
+      needSpec[spec.class].push([spec.name, spec.img, spec.class])
+  })
+
+  //console.log(needSpec)
 
   function importAll(r) {
     let images = {};
@@ -106,6 +117,15 @@ const Home = () => {
       images[item.replace('./', '')] = r(item);
     });
     return images;
+  }
+
+  function FormatClassNames(className){
+    const words = className.split("-")
+    for(let i = 0; i < words.length; i++){
+      words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+
+    return words.join(" ")
   }
 
   const images = importAll(
@@ -150,11 +170,42 @@ const Home = () => {
       </div>
       <div className='recruiting-container'>
         <h1>Recruiting</h1>
-        <div className='recruiting-icons'>
-          {needSpec.map(({ name, recruitng, img }, index) => (
-            <img key={index} src={images[img]} alt='spec icon' title={name} />
-          ))}
-        </div>
+        <table className='raid-info-table'>
+            <thead>
+              <tr>
+                <td className='header' colSpan={2}>Raid Schedule</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className='column-1'>Tuesday</td>
+                <td className='column-2'>9pm - 1am EST</td>
+              </tr>
+              <tr>
+                <td className='column-1'>Thursday</td>
+                <td className='column-2'>9pm - 1am EST</td>
+              </tr>
+              <tr>
+                <td className='column-1'>Sunday</td>
+                <td className='column-2'>9pm - 12am EST</td>
+              </tr>
+            </tbody>
+        </table>
+        <hr />
+        <table className='recruiting-table'>
+          <tbody>
+              {Object.keys(needSpec).map((key, idx) => (
+                <tr key={idx}>
+                  <td className={`${classLabels[0][FormatClassNames(key)]} column-1`}>{FormatClassNames(key)}</td>
+                  <td className='column-2'>
+                    {needSpec[key].map((data, index) => (
+                      <img key={`${index}${data[0]}`} src={images[data[1]]} alt='spec icon' title={data[0]} />
+                    ))}
+                  </td>
+                </tr>
+              ))}
+        </tbody>
+        </table>
       </div>
       <div className='previous-progress-container'>
         <h1>Previous Tiers</h1>
