@@ -5,7 +5,6 @@ import raids from '../config/raids';
 import classLabels from '../config/classLabels.json';
 import previousRaids from '../config/previousRaids.json';
 import raidRoster from '../config/raidRoster.json';
-import { Form } from 'react-router-dom';
 
 const raiderIOUrl =
   'https://raider.io/api/v1/guilds/profile?region=us&realm=area%2052&name=stay%20mad&fields=raid_progression%2Craid_rankings';
