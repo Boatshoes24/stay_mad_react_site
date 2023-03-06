@@ -117,22 +117,13 @@
   min-height: 150px;
   margin-bottom: 10px;
   position: relative;
+  border: 1px solid #333;
 }
 .raid-card h2 {
   background-color: rgba(0, 0, 0, 0.85);
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 3px;
-}
-.raid-card h3 {
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 100%;
-  padding-top: 3px;
-}
-.raid-card p {
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 100%;
-  padding-bottom: 3px;
 }
 
 .raid-ranks {
@@ -148,6 +139,16 @@
   width: 100%;
   position: absolute;
   top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.card-text h3 {
+  width: 100%;
+  padding: 3px;
+  color: sandybrown;
+  font-size: 1.25rem;
+}
+.card-text h3 .highlight {
+  color: white;
 }
 
 .recruiting-container hr {
@@ -159,9 +160,10 @@
 }
 .recruiting-container .header {
   color: sandybrown;
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   height: 30px;
+  font-size: 1.3rem;
 }
 .recruiting-container .raid-info-table {
   margin: 0 auto;
@@ -258,10 +260,6 @@ th {
 
 .druid {
   color: #ff7c0a;
-}
-
-.evoker {
-  color: #33937F;
 }
 
 .hunter {

@@ -147,8 +147,7 @@ const Home = () => {
             }}
           >
             <div className='card-text'>
-              <h3>{raids[index].display}</h3>
-              <p>{raid.progress || '0'}</p>
+              <h3>{`${raids[index].display}:`}<span className='highlight'>{` (${raid.progress || '0'})`}</span></h3>
             </div>
             <div className='raid-ranks'>
               <h2 className='raid-ranks-ranking'>
