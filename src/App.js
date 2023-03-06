@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LogoHeader from './components/LogoHeader';
 import GuildInformation from './components/GuildInformation';
 import Links from './components/Links';
@@ -16,16 +16,17 @@ function App() {
         <LogoHeader />
         <br />
         <Links />
-        <br />
-        <div className='current-content'>
-          <Routes>
-            <Route path='/' exact element={<Home />} />
-            <Route path='/streams' element={<Streams />} />
-            <Route path='/gallery' element={<ImageSlider />} />
-            <Route path='/about' element={<GuildInformation />} />
-            <Route path='/apply' element={<GuildApplication />} />
-          </Routes>
-        </div>
+        <br />        
+          <div className='current-content'>
+            <Routes>
+              <Route path="/"  element={<Home />} />
+              <Route path='/streams' element={<Streams />} />
+              <Route path='/gallery' element={<ImageSlider />} />
+              <Route path='/about' element={<GuildInformation />} />
+              <Route path='/apply' element={<GuildApplication />} />
+            </Routes>
+          </div>
+        
         <Footer />
       </div>
     </Router>
