@@ -146,19 +146,19 @@
   },
   {
     "name": "Assassination Rogue",
-    "recruiting": false,
+    "recruiting": true,
     "img": "rogue-ass.jpg",
     "class": "rogue"
   },
   {
     "name": "Outlaw Rogue",
-    "recruiting": false,
+    "recruiting": true,
     "img": "rogue-outlaw.jpg",
     "class": "rogue"
   },
   {
     "name": "Subtlety Rogue",
-    "recruiting": false,
+    "recruiting": true,
     "img": "rogue-sub.jpg",
     "class": "rogue"
   },
