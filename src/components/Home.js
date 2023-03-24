@@ -108,7 +108,7 @@ const Home = () => {
       needSpec[spec.class].push([spec.name, spec.img, spec.class])
   })
 
-  //console.log(needSpec)
+  // console.log(needSpec.length)
 
   function importAll(r) {
     let images = {};
@@ -190,7 +190,8 @@ const Home = () => {
             </tbody>
         </table>
         <hr />
-        <table className='recruiting-table'>
+        {Object.keys(needSpec).length > 0 ?
+          <table className='recruiting-table'>
           <tbody>
               {Object.keys(needSpec).map((key, idx) => (
                 <tr key={idx}>
@@ -204,6 +205,9 @@ const Home = () => {
               ))}
         </tbody>
         </table>
+        : <p className="recruiting-closed">
+            We are not looking for anything specific right now, but please don't hesitate to apply if you feel you are a strong candidate.
+          </p>}
       </div>
       <div className='previous-progress-container'>
         <h1>Previous Tiers</h1>

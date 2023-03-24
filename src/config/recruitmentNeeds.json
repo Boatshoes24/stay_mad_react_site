@@ -32,7 +32,7 @@
   },
   {
     "name": "Balance Druid",
-    "recruiting": true,
+    "recruiting": false,
     "img": "druid-balance.jpg",
     "class": "druid"
   },
@@ -56,13 +56,13 @@
   },
   {
     "name": "Beast Mastery Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "img": "hunter-bm.jpg",
     "class": "hunter"
   },
   {
     "name": "Marksmanship Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "img": "hunter-mm.jpg",
     "class": "hunter"
   },
@@ -146,19 +146,19 @@
   },
   {
     "name": "Assassination Rogue",
-    "recruiting": true,
+    "recruiting": false,
     "img": "rogue-ass.jpg",
     "class": "rogue"
   },
   {
     "name": "Outlaw Rogue",
-    "recruiting": true,
+    "recruiting": false,
     "img": "rogue-outlaw.jpg",
     "class": "rogue"
   },
   {
     "name": "Subtlety Rogue",
-    "recruiting": true,
+    "recruiting": false,
     "img": "rogue-sub.jpg",
     "class": "rogue"
   },
