@@ -205,9 +205,12 @@ const Home = () => {
               ))}
         </tbody>
         </table>
-        : <p className="recruiting-closed">
+        : 
+        <div className="recruiting-closed">
+          <p>
             We are not looking for anything specific right now, but please don't hesitate to apply if you feel you are a strong candidate.
-          </p>}
+          </p>
+        </div>}
       </div>
       <div className='previous-progress-container'>
         <h1>Previous Tiers</h1>

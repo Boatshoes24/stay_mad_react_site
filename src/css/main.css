@@ -167,11 +167,12 @@
 }
 .recruiting-container .recruiting-closed {
   width: 65%;
-  margin: 0 auto;
+  margin: 10px auto;
+  text-align: justify;
+}
+.recruiting-container .recruiting-closed p {
   font-size: 0.9rem;
-  margin-top: 20px;
   color: #777;
-  text-align: left;
 }
 .recruiting-container .raid-info-table {
   margin: 0 auto;
