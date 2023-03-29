@@ -1,0 +1,208 @@
+@use '../abstracts/' as *;
+
+.application-form-container {
+
+    max-width: 1000px;
+    width: 80%;
+    margin-bottom: 200px;
+
+    #submit-btn {
+        border-radius: 0;
+        background: $darkRed;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 60px;
+        font-size: 1.8rem;
+        text-decoration: none;
+
+        &:hover {
+            background: $red;
+            cursor: pointer;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+
+    p {  
+        &.application-input-error-text {
+            color: #fc8181;
+            font-size: 1.2rem;
+        }
+    }
+   
+    .application-form-container-header{
+        margin-bottom: 50px;
+        .application-form-container-header-label{
+            color: $red;
+            font-weight: 400;
+            font-size: 3rem;
+            margin: 25px 0;
+        }
+        .application-form-container-header-info{
+            text-align: left;
+            color: $grey700;
+            text-align: justify;
+            word-spacing: -1px;
+
+            a {
+                text-decoration: none;
+                color: $cyan;
+            }
+        }
+    }
+
+    .application-form-section {
+
+        .application-form-section-header {
+            color: $red;
+            text-align: left;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .application-form-section-questions {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 50px;
+
+            .wide-span {
+                grid-column: span 2;
+            }
+
+            .tall-span {
+                height: 180px !important;
+            }
+
+            .application-form-question {
+                text-align: left;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                // background-color: beige;
+                height: 80px;
+
+                a {
+                    text-decoration: none;
+                    color: $cyan;
+                }
+
+                label {
+                    font-size: 1.1rem;
+                }
+
+                input,
+                select {
+                    height: 45px;
+                    background-color: $grey1000;
+                    color: $grey100;
+                    border: 1px solid black;
+                    border-radius: 0;
+                    padding-left: 10px;
+                    font-size: 1rem;
+
+                    &.application-input-error {
+                        border: 1px solid #fc8181;
+                    }
+
+                    &:focus {
+                        border: 1px solid azure;
+                        outline: none;
+                    }
+
+                    &:disabled {
+                        background-color: black;
+                    }
+
+                    &::placeholder {
+                        color: $grey400;
+                    }
+
+                    &:-ms-input-placeholder {
+                        color: $grey400;
+                    }
+
+                    &::-ms-input-placeholder {
+                        color: $grey400;
+                    }
+                }
+
+                textarea {
+                    height: 120px;
+                    background-color: $grey1000;
+                    color: $grey100;
+                    border: 1px solid black;
+                    border-radius: 0;
+                    padding: 10px;
+                    font-size: 1.1rem;
+                    resize: none;
+
+                    &.application-input-error {
+                        border: 1px solid #fc8181;
+                    }
+
+                    &:focus {
+                        border: 1px solid azure;
+                        outline: none;
+                    }
+
+                    &:disabled {
+                        background-color: black;
+                    }
+
+                    &::placeholder {
+                        color: $grey400;
+                    }
+
+                    &:-ms-input-placeholder {
+                        color: $grey400;
+                    }
+
+                    &::-ms-input-placeholder {
+                        color: $grey400;
+                    }
+                }
+    
+                p {  
+                    &.application-input-error-text {
+                        color: #fc8181;
+                        font-size: 0.8rem;
+                    }
+                }
+            }            
+        }        
+    }
+}
+
+@media (max-width: 768px) {
+    .application-form-container {
+        .application-form-section {
+            .application-form-section-questions {
+                display: flex;
+                flex-direction: column;
+
+                .tall-span {
+                    height: 200px !important;
+                }
+
+                label {
+                    font-size: 1rem;
+                }
+
+                .application-form-question {
+                  
+                    textarea,
+                    input,
+                    select {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
