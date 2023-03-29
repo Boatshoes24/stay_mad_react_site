@@ -5,7 +5,7 @@ import axios from 'axios';
 import classes from '../constants/classes';
 import specs from '../constants/specs';
 
-const POST_URL = `https://discord.com/api/webhooks/${process.env.APP_WEBHOOK1}/${process.env.APP_WEBHOOK2}`;
+const POST_URL = process.env.REACT_APP_WEBHOOK_URL;
 
 const inputError = 'application-input-error';
 const inputErrorText = 'application-input-error-text';
