@@ -5,9 +5,10 @@ import GuildInformation from './components/GuildInformation';
 import Links from './components/Links';
 import ImageSlider from './components/ImageSlider';
 import Streams from './components/Streams';
-import GuildApplication from './components/GuildApplication';
+import AppFormSuccess from './components/AppFormSuccess';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import AppForm from './components/AppForm';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
               <Route path='/streams' element={<Streams />} />
               <Route path='/gallery' element={<ImageSlider />} />
               <Route path='/about' element={<GuildInformation />} />
-              <Route path='/apply' element={<GuildApplication />} />
+              <Route path='/apply' element={<AppForm />} />
+              <Route path='/applysuccess' element={<AppFormSuccess />} />
             </Routes>
           </div>
         

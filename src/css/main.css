@@ -435,32 +435,6 @@ th {
   height: 24px;
 }
 
-.guild-application-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-.guild-application-container p {
-  text-align: left;
-}
-.guild-application-container form {
-  margin-top: 60px;
-}
-.guild-application-container input {
-  text-decoration: none;
-  font-size: 1.8rem;
-  background-color: rgb(4, 255, 255);
-  border: 1px solid black;
-  padding: 15px 32px;
-  text-align: center;
-  border-radius: 5px;
-  font-weight: 700;
-}
-.guild-application-container input:hover {
-  background-color: #fd6565;
-  cursor: pointer;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -475,6 +449,213 @@ th {
   padding: 3px;
 }
 
+.application-form-container {
+  max-width: 1000px;
+  width: 80%;
+  margin-bottom: 200px;
+}
+.application-form-container #submit-btn {
+  border-radius: 0;
+  background: #c44f4f;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 60px;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.application-form-container #submit-btn:hover {
+  background: #fd6565;
+  cursor: pointer;
+}
+.application-form-container #submit-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.application-form-container p.application-input-error-text {
+  color: #fc8181;
+  font-size: 1.2rem;
+}
+.application-form-container .application-form-container-header {
+  margin-bottom: 50px;
+}
+.application-form-container .application-form-container-header .application-form-container-header-label {
+  color: #fd6565;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 25px 0;
+}
+.application-form-container .application-form-container-header .application-form-container-header-info {
+  text-align: left;
+  color: #777;
+  text-align: justify;
+  word-spacing: -1px;
+}
+.application-form-container .application-form-container-header .application-form-container-header-info a {
+  text-decoration: none;
+  color: rgb(4, 255, 255);
+}
+.application-form-container .application-form-section .application-form-section-header {
+  color: #fd6565;
+  text-align: left;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.application-form-container .application-form-section .application-form-section-questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+.application-form-container .application-form-section .application-form-section-questions .wide-span {
+  grid-column: span 2;
+}
+.application-form-container .application-form-section .application-form-section-questions .tall-span {
+  height: 180px !important;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question {
+  text-align: left;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 80px;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question a {
+  text-decoration: none;
+  color: rgb(4, 255, 255);
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question label {
+  font-size: 1.1rem;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input,
+.application-form-container .application-form-section .application-form-section-questions .application-form-question select {
+  height: 45px;
+  background-color: #242424;
+  color: #ccc;
+  border: 1px solid black;
+  border-radius: 0;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input.application-input-error,
+.application-form-container .application-form-section .application-form-section-questions .application-form-question select.application-input-error {
+  border: 1px solid #fc8181;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input:focus,
+.application-form-container .application-form-section .application-form-section-questions .application-form-question select:focus {
+  border: 1px solid azure;
+  outline: none;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input:disabled,
+.application-form-container .application-form-section .application-form-section-questions .application-form-question select:disabled {
+  background-color: black;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input::-moz-placeholder, .application-form-container .application-form-section .application-form-section-questions .application-form-question select::-moz-placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input::placeholder,
+.application-form-container .application-form-section .application-form-section-questions .application-form-question select::placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input:-ms-input-placeholder,
+.application-form-container .application-form-section .application-form-section-questions .application-form-question select:-ms-input-placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question input::-ms-input-placeholder,
+.application-form-container .application-form-section .application-form-section-questions .application-form-question select::-ms-input-placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea {
+  height: 120px;
+  background-color: #242424;
+  color: #ccc;
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 10px;
+  font-size: 1.1rem;
+  resize: none;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea.application-input-error {
+  border: 1px solid #fc8181;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea:focus {
+  border: 1px solid azure;
+  outline: none;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea:disabled {
+  background-color: black;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea::-moz-placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea::placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea:-ms-input-placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question textarea::-ms-input-placeholder {
+  color: #aaa;
+}
+.application-form-container .application-form-section .application-form-section-questions .application-form-question p.application-input-error-text {
+  color: #fc8181;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .application-form-container .application-form-section .application-form-section-questions {
+    display: flex;
+    flex-direction: column;
+  }
+  .application-form-container .application-form-section .application-form-section-questions .tall-span {
+    height: 200px !important;
+  }
+  .application-form-container .application-form-section .application-form-section-questions label {
+    font-size: 1rem;
+  }
+  .application-form-container .application-form-section .application-form-section-questions .application-form-question textarea,
+  .application-form-container .application-form-section .application-form-section-questions .application-form-question input,
+  .application-form-container .application-form-section .application-form-section-questions .application-form-question select {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+.app-success-container {
+  max-width: 1000px;
+  width: 80%;
+  margin-bottom: 200px;
+}
+.app-success-container h1 {
+  color: #57d98f;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 25px 0;
+}
+.app-success-container p {
+  text-align: justify;
+  text-justify: inter-character;
+  font-size: 1.4rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.app-success-container img {
+  max-width: 550px;
+  margin-bottom: 25px auto;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .app-success-container {
+    max-width: 600px;
+  }
+  .app-success-container h1 {
+    font-size: 2rem;
+  }
+  .app-success-container p {
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
