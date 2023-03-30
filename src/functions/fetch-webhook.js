@@ -4,7 +4,6 @@ const jsonc = require('jsonc');
 exports.handler = async (event, context) => {
 
         try {   
-            console.log(event, context)
             const { name, 
                 age,
                 discord,
