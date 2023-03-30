@@ -21,8 +21,6 @@ exports.handler = async (event, context) => {
                 extraInfo 
             } = JSON.parse(event.body).data
 
-            console.log(JSON.parse(event.body))
-
             const blank = "\u200b"
 
             const fields = [
@@ -55,7 +53,7 @@ exports.handler = async (event, context) => {
                     Accept: "*/*",
                     "Content-Type": "application/json"
                 },
-                payload_json: {
+                payload_json: JSON.stringify({
                     "avatar_url": "https://i.imgur.com/DiHfi2e.png",
                     "thread_name": threadNameString,
                     "embeds": [
@@ -72,10 +70,10 @@ exports.handler = async (event, context) => {
                             }
                         }
                     ]
-                }
+                })
             })
         } catch (err) {
-            console.log(err);
+            // console.log(err);
             return {
                 statusCode: 500,
                 headers: {
