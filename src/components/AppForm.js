@@ -40,7 +40,7 @@ const AppForm = () => {
             {"name": "Misc", "value": values.extraInfo, "inline": false},
         ];
 
-        axios.post('../../.netlify/functions/fetch-webhook', {
+        axios.post('./.netlify/functions/fetch-webhook', {
             data: {
                 "values": values,
                 "fields": fields
