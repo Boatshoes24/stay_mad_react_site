@@ -5,12 +5,8 @@ import axios from 'axios';
 import classes from '../constants/classes';
 import specs from '../constants/specs';
 
-// const POST_URL = process.env.REACT_APP_WEBHOOK_URL;
-
 const inputError = 'application-input-error';
 const inputErrorText = 'application-input-error-text';
-
-const blank = '\u200b';
 
 const AppForm = () => {
 
@@ -18,41 +14,36 @@ const AppForm = () => {
 
     const onSubmit = (values, actions) => {
 
-        const fields = [
-            {"name": "Name", "value": values.name, "inline": true},
-            {"name": "Age", "value": values.age, "inline": true},
-            {"name": blank, "value": blank, "inline": true},
-            {"name": "Discord", "value": values.discord, "inline": true},
-            {"name": "Btag", "value": values.btag, "inline": true},
-            {"name": blank, "value": blank, "inline": true},
-            {"name": "Character", "value": values.charName, "inline": true},
-            {"name": "Server", "value": values.charServer, "inline": true},
-            {"name": blank, "value": blank, "inline": true},
-            {"name": "Class", "value": values.charClass, "inline": true},
-            {"name": "Spec", "value": values.charSpec, "inline": true},
-            {"name": blank, "value": blank, "inline": true},
-            {"name": "Off Specs", "value": values.charOSpec, "inline": false},
-            {"name": "Warcraft Logs", "value": values.wclLink, "inline": false},
-            {"name": "Raid Times", "value": values.raidTimes, "inline": false},
-            {"name": "Vouch", "value": values.vouch, "inline": false},
-            {"name": "Raid History", "value": values.historyRaids, "inline": false},
-            {"name": "Guild History", "value": values.historyGuilds, "inline": false},
-            {"name": "Misc", "value": values.extraInfo, "inline": false},
-        ];
-
         axios.post('./.netlify/functions/fetch-webhook', {
+            headers: {
+                Accept: "*/*",
+                "Content-Type": "application/json"
+            },
             data: {
-                "values": values,
-                "fields": fields
-            }
-            
+                name: values.name,
+                age: values.age,
+                discord: values.discord,
+                btag: values.btag,
+                charName: values.charName,
+                charServer: values.charServer,
+                charClass: values.charClass,
+                charSpec: values.charSpec,
+                charOSpec: values.charOSpec,
+                raidTimes: values.raidTimes,
+                historyGuilds: values.historyGuilds,
+                historyRaids: values.historyRaids,
+                wclLink: values.wclLink,
+                vouch: values.vouch,
+                extraInfo: values.extraInfo
+            }           
         }).then(res => {
             actions.resetForm();
             navigate('/applysuccess');
+            console.log(res)
         }).catch(err => {
             alert('There was an issue submitting your application. Please try again later.')
             actions.setSubmitting(false);
-            //console.error(err);
+            console.log(err);
         })        
     };
 
