@@ -21,6 +21,8 @@ exports.handler = async (event, context) => {
                 extraInfo 
             } = JSON.parse(event.body).data
 
+            console.log(JSON.parse(event.body))
+
             const blank = "\u200b"
 
             const fields = [
