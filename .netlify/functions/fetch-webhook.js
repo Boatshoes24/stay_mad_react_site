@@ -1,20 +1,17 @@
 import axios from 'axios';
 
-const handler = async (event) => {
-    const POST_URL = process.env.REACT_APP_WEBHOOK_URL;
-
-    console.log(event);
-
+exports.handler = async (event, context) => {
     try {
-        const { data } = axios.post(POST_URL)
+        let response = await axios.post(process.env.REACT_APP_WEBHOOK_URL);
 
         return {
             statusCode: 200,
-            body: JSON.stringify(data)
-        }
+            body: JSON.stringify(response)
+        };
     } catch (error) {
-        alert(error);
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ error })
+        };
     }
-}
-
-module.exports = { handler };
+};
