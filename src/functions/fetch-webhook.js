@@ -48,8 +48,6 @@ exports.handler = async (event, context) => {
             const threadNameString = `${name} - ${charSpec} ${charClass}`
             const embedTitle = `${charName} - ${charSpec} ${charClass}`
 
-            console.log(payload);
-
             const res = await axios.post(process.env.REACT_APP_WEBHOOK_URL, {
                 headers: {
                     Accept: "*/*",
