@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 const handler = async (event) => {
     const POST_URL = process.env.REACT_APP_WEBHOOK_URL;
 
@@ -9,12 +11,7 @@ const handler = async (event) => {
             body: JSON.stringify(data)
         }
     } catch (error) {
-        const { status, statusText, headers, data } = error.response;
-
-        return {
-            statusCode: status,
-            body: JSON.stringify({ status, statusText, headers, data })
-        }
+        alert(error);
     }
 }
 
