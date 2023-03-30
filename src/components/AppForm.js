@@ -5,7 +5,7 @@ import axios from 'axios';
 import classes from '../constants/classes';
 import specs from '../constants/specs';
 
-const POST_URL = process.env.REACT_APP_WEBHOOK_URL;
+// const POST_URL = process.env.REACT_APP_WEBHOOK_URL;
 
 const inputError = 'application-input-error';
 const inputErrorText = 'application-input-error-text';
@@ -40,7 +40,7 @@ const AppForm = () => {
             {"name": "Misc", "value": values.extraInfo, "inline": false},
         ];
 
-        axios.post(POST_URL, {
+        axios.post('../../.netlify/functions/fetch-webhook', {
             headers: {
                 "content-type": "application/json"
             },
