@@ -41,34 +41,18 @@ const AppForm = () => {
         ];
 
         axios.post('../../.netlify/functions/fetch-webhook', {
-            headers: {
-                "content-type": "application/json"
-            },
-            payload_json: JSON.stringify({
-                "avatar_url": "https://i.imgur.com/DiHfi2e.png",
-                "thread_name": `${values.name} - ${values.charSpec} ${values.charClass}`,
-                "embeds": [
-                  {
-                    "title": `${values.charName} - ${values.charSpec} ${values.charClass}`,
-                    "color": 15258703,
-                    "fields": fields,
-                    "thumbnail": {
-                        "url": "https://i.imgur.com/DiHfi2e.png"
-                    },      
-                    "footer": {
-                      "text": "Powered by Shoes",
-                      "icon_url": "https://i.imgur.com/DiHfi2e.png"
-                    }
-                  }
-                ]
-              })
+            data: {
+                "values": values,
+                "fields": fields
+            }
+            
         }).then(res => {
             actions.resetForm();
             navigate('/applysuccess');
         }).catch(err => {
             alert('There was an issue submitting your application. Please try again later.')
             actions.setSubmitting(false);
-            console.error(err);
+            //console.error(err);
         })        
     };
 
