@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
                 wclLink,
                 vouch,
                 extraInfo 
-            } = jsonc.parse(event.body).data
+            } = JSON.parse(event.body).data
 
             const blank = "\u200b"
 
@@ -45,24 +45,8 @@ exports.handler = async (event, context) => {
                 {"name": "Misc", "value": extraInfo, "inline": false},
             ]
             
-            const payload = {
-                "avatar_url": "https://i.imgur.com/DiHfi2e.png",
-                "thread_name": `${name} - ${charSpec} ${charClass}`,
-                "embeds": [
-                    {
-                        "title": `${charName} - ${charSpec} ${charClass}`,
-                        "color": 15258703,
-                        "fields": fields,
-                        "thumbnail": {
-                            "url": "https://i.imgur.com/DiHfi2e.png"
-                        },
-                        "footer": {
-                            "text": "Powered by Shoes",
-                            "icon_url": "https://i.imgur.com/DiHfi2e.png"
-                        }
-                    }
-                ]
-            }
+            const threadNameString = `${name} - ${charSpec} ${charClass}`
+            const embedTitle = `${charName} - ${charSpec} ${charClass}`
 
             console.log(payload);
 
@@ -73,10 +57,10 @@ exports.handler = async (event, context) => {
                 },
                 payload_json: {
                     "avatar_url": "https://i.imgur.com/DiHfi2e.png",
-                    "thread_name": `${name} - ${charSpec} ${charClass}`,
+                    "thread_name": threadNameString,
                     "embeds": [
                         {
-                            "title": `${charName} - ${charSpec} ${charClass}`,
+                            "title": embedTitle,
                             "color": 15258703,
                             "fields": fields,
                             "thumbnail": {
