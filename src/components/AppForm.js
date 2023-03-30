@@ -43,7 +43,7 @@ const AppForm = () => {
         }).catch(err => {
             alert('There was an issue submitting your application. Please try again later.')
             actions.setSubmitting(false);
-            console.log(err);
+            console.log(err.msg);
         })        
     };
 

@@ -64,12 +64,31 @@ exports.handler = async (event, context) => {
                 ]
             }
 
+            console.log(payload);
+
             const res = await axios.post(process.env.REACT_APP_WEBHOOK_URL, {
                 headers: {
                     Accept: "*/*",
                     "Content-Type": "application/json"
                 },
-                payload_json: JSON.stringify(payload)
+                payload_json: {
+                    "avatar_url": "https://i.imgur.com/DiHfi2e.png",
+                    "thread_name": `${name} - ${charSpec} ${charClass}`,
+                    "embeds": [
+                        {
+                            "title": `${charName} - ${charSpec} ${charClass}`,
+                            "color": 15258703,
+                            "fields": fields,
+                            "thumbnail": {
+                                "url": "https://i.imgur.com/DiHfi2e.png"
+                            },
+                            "footer": {
+                                "text": "Powered by Shoes",
+                                "icon_url": "https://i.imgur.com/DiHfi2e.png"
+                            }
+                        }
+                    ]
+                }
             })
         } catch (err) {
             console.log(err);
@@ -86,6 +105,6 @@ exports.handler = async (event, context) => {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ msg: "Request was successful" })
+            body: "Request Successful"
         }
 }
