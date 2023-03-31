@@ -27,7 +27,7 @@ export const appSchema = yup.object().shape({
     charSpec: yup.string().required('Required'),
     charOSpec: yup.string().max(300, 'Character limit exceeded'),
     wclLink: yup.string()
-                .matches(/^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+\.(warcraftlogs)\.(com)(\/.*)?$/giu, 'Invalid warcraftlogs url')
+                .matches(/^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?(classic\.)?(warcraftlogs)\.(com)(\/.*)?$/giu, 'Invalid warcraftlogs url')
                 .max(75, 'Character limit exceeded')
                 .required('Required'),
     raidTimes: yup.string()

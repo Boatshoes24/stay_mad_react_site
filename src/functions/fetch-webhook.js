@@ -73,7 +73,7 @@ exports.handler = async (event, context) => {
                 })
             })
         } catch (err) {
-            // console.log(err);
+            console.log(err);
             return {
                 statusCode: 500,
                 headers: {
