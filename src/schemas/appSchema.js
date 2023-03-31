@@ -28,7 +28,7 @@ export const appSchema = yup.object().shape({
     charOSpec: yup.string().max(300, 'Character limit exceeded'),
     wclLink: yup.string()
                 .matches(/^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?(classic\.)?(warcraftlogs)\.(com)(\/.*)?$/giu, 'Invalid warcraftlogs url')
-                .max(75, 'Character limit exceeded')
+                .max(150, 'Character limit exceeded')
                 .required('Required'),
     raidTimes: yup.string()
                 .matches(/^[a-zA-Z0-9\s-]+$/giu, 'Special characters not allowed')
