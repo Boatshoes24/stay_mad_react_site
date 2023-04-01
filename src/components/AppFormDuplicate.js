@@ -5,7 +5,7 @@ const AppFormDuplicate = () => {
             <img src='https://i.imgur.com/aQSChoa.png' alt='gorilla smiling'/>
             <p>
                It looks like you have already applied. We will get back with you soon if we are interested. 
-               If you have question please contact James_#7331 on Discord.
+               If you have questions please contact James_#7331 on Discord.
             </p>
         </div>
     )
