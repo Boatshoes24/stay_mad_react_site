@@ -656,6 +656,43 @@ th {
     width: 100%;
   }
 }
+.app-duplicate-container {
+  max-width: 1000px;
+  width: 80%;
+  margin-bottom: 200px;
+}
+.app-duplicate-container h1 {
+  color: #57d98f;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 25px 0;
+}
+.app-duplicate-container p {
+  text-align: justify;
+  text-justify: inter-character;
+  font-size: 1.4rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.app-duplicate-container img {
+  max-width: 550px;
+  margin-bottom: 25px auto;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .app-duplicate-container {
+    max-width: 600px;
+  }
+  .app-duplicate-container h1 {
+    font-size: 2rem;
+  }
+  .app-duplicate-container p {
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

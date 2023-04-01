@@ -93,13 +93,6 @@ const Home = () => {
     });
   }, []);
 
-  // const needSpec = [];
-  // classes.forEach((spec) => {
-  //   if (spec.recruiting === true) {
-  //     needSpec.push(spec);
-  //   }
-  // });
-
   const needSpec = {}
   classes.forEach((spec) => {
     if (!needSpec[spec.class] && spec.recruiting === true) 
@@ -107,8 +100,6 @@ const Home = () => {
     if (spec.recruiting === true)
       needSpec[spec.class].push([spec.name, spec.img, spec.class])
   })
-
-  // console.log(needSpec.length)
 
   function importAll(r) {
     let images = {};
@@ -130,8 +121,6 @@ const Home = () => {
   const images = importAll(
     require.context('../images', false, /\.(png|jpe?g|svg)$/)
   );
-
-  // needSpec.map(({ name, recruitng, img }, index) => console.log(images[img]));
 
   return (
     <div className='home-container'>

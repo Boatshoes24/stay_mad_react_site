@@ -1,7 +1,6 @@
-const axios = require('axios');
-const jsonc = require('jsonc');
+import axios from 'axios';
 
-exports.handler = async (event, context) => {
+const handler = async(event, context) => {
 
         try {   
             const { name, 
@@ -90,3 +89,5 @@ exports.handler = async (event, context) => {
             body: "Request Successful"
         }
 }
+
+export { handler };

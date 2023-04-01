@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import classes from '../constants/classes';
 import specs from '../constants/specs';
+import { useEffect } from "react";
 
 const inputError = 'application-input-error';
 const inputErrorText = 'application-input-error-text';
@@ -12,8 +13,17 @@ const AppForm = () => {
 
     const navigate = useNavigate();
 
-    const onSubmit = (values, actions) => {
+    useEffect(() => {
+        if(localStorage.getItem('applied') === 'true')
+            navigate('/applyduplicate');
+    });
 
+    const onSubmit = (values, actions) => {
+        
+        const verifyCharSpec = document.getElementById('charSpec').value;
+        if (verifyCharSpec !== undefined)
+            values.charSpec = verifyCharSpec;
+        
         axios.post('./.netlify/functions/fetch-webhook', {
             headers: {
                 Accept: "*/*",
@@ -38,6 +48,7 @@ const AppForm = () => {
             }           
         }).then(res => {
             actions.resetForm();
+            localStorage.setItem('applied', 'true');
             navigate('/applysuccess');
             console.log(res)
         }).catch(err => {
@@ -82,7 +93,6 @@ const AppForm = () => {
                 </p>
             </div>
             <form onSubmit={handleSubmit} autoComplete="off">
-                
                 <div className="application-form-section">
                     <h2 className="application-form-section-header">Your Info</h2>
 
