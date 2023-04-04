@@ -20,7 +20,7 @@
   },
   {
     "name": "Havoc Demon Hunter",
-    "recruiting": false,
+    "recruiting": true,
     "img": "dh-havoc.jpg",
     "class": "demon-hunter"
   },
@@ -140,7 +140,7 @@
   },
   {
     "name": "Shadow Priest",
-    "recruiting": false,
+    "recruiting": true,
     "img": "priest-shadow.jpg",
     "class": "priest"
   },
