@@ -126,33 +126,35 @@ const Home = () => {
     <div className='home-container'>
       <div className='progress-container'>
         <h1>Raid Progress</h1>
-        {raidProgressData.map((raid, index) => (
-          <div
-            key={index}
-            className='raid-card'
-            style={{
-              backgroundImage: `url(${raids[index].img})`,
-              backgroundSize: 'cover',
-            }}
-          >
-            <div className='card-text'>
-              <h3>{`${raids[index].display}:`}<span className='highlight'>{` (${raid.progress || '0'})`}</span></h3>
+        {raids.map(({ name, display, img }, index) => (
+          raidProgressData.filter((raid) => raid.name === name).map((raid) => (
+            <div
+              key={index}
+              className='raid-card'
+              style={{
+                backgroundImage: `url(${img})`,
+                backgroundSize: '130% 110%',
+                backgroundRepeat: 'no-repeat'
+              }} >
+              <div className='card-text'>
+                <h3>{`${display}:`}<span className='highlight'>{` (${raid.progress || '0'})`}</span></h3>
+              </div>
+              <div className='raid-ranks'>
+                <h2 className='raid-ranks-ranking'>
+                  Region:{' '}
+                  <span className='raid-ranks-value'>
+                    {raid.rankings.mythic.region || '0'}
+                  </span>
+                </h2>
+                <h2 className='raid-ranks-ranking'>
+                  Realm:{' '}
+                  <span className='raid-ranks-value'>
+                    {raid.rankings.mythic.realm || '0'}
+                  </span>
+                </h2>
+              </div>
             </div>
-            <div className='raid-ranks'>
-              <h2 className='raid-ranks-ranking'>
-                Region:{' '}
-                <span className='raid-ranks-value'>
-                  {raid.rankings.mythic.region || '0'}
-                </span>
-              </h2>
-              <h2 className='raid-ranks-ranking'>
-                Realm:{' '}
-                <span className='raid-ranks-value'>
-                  {raid.rankings.mythic.realm || '0'}
-                </span>
-              </h2>
-            </div>
-          </div>
+          ))
         ))}
       </div>
       <div className='recruiting-container'>
