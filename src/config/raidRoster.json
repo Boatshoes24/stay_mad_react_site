@@ -1,98 +1,102 @@
 [
-  {
-    "characterName": "Runeshoes",
-    "displayName": "Shoes"
-  },
-  {
-    "characterName": "Rollow",
-    "displayName": "Rollow"
-  },
-  {
-    "characterName": "Pridewalker",
-    "displayName": "Pride"
-  },
-  {
-    "characterName": "Rellicore",
-    "displayName": "Rellicore"
-  },
-  {
-    "characterName": "Illmagepa",
-    "displayName": "Illmage"
-  },
-  {
-    "characterName": "Shuibo",
-    "displayName": "Shuibo"
-  },
-  {
-    "characterName": "Damio",
-    "displayName": "Damio"
-  },
-  {
-    "characterName": "Nicdwagon",
-    "displayName": "Nic"
-  },
-  {
-    "characterName": "Deli",
-    "displayName": "Deli"
-  },
-  {
-    "characterName": "Xashayar",
-    "displayName": "Xashayar"
-  },
-  {
-    "characterName": "Whitespanks",
-    "displayName": "Bronze"
-  },
-  {
-    "characterName": "Velgandh",
-    "displayName": "Velgandh"
-  },
-  {
-    "characterName": "Duffmann",
-    "displayName": "Duffmann"
-  },
-  {
-    "characterName": "Lojicke",
-    "displayName": "Lojick"
-  },
-  {
-    "characterName": "Boostedbro",
-    "displayName": "Boosted"
-  },
-  {
-    "characterName": "Diverging",
-    "displayName": "Diver"
-  },
-  {
-    "characterName": "Runzngunz",
-    "displayName": "Runz"
-  },
-  {
-    "characterName": "Tatoski",
-    "displayName": "Tatoski"
-  },
-  {
-    "characterName": "Trøllnadø",
-    "displayName": "Trøllnadø"
-  },
-  {
-    "characterName": "Notdeadrandy",
-    "displayName": "Randy"
-  },
-  {
-    "characterName": "Oxxi",
-    "displayName": "Oxxi"
-  },
-  {
-    "characterName": "Weezyd",
-    "displayName": "Weezyd"
-  },
-  {
-    "characterName": "Elga",
-    "displayName": "Elga"
-  },
-  {
-    "characterName": "Billygos",
-    "displayName": "Billygos"
-  }
+	{
+		"characterName": "Lightshoes",
+		"displayName": "Shoes"
+	},
+	{
+		"characterName": "Rollow",
+		"displayName": "Rollow"
+	},
+	{
+		"characterName": "Pridewalker",
+		"displayName": "Pride"
+	},
+	{
+		"characterName": "Rellicore",
+		"displayName": "Rellicore"
+	},
+	{
+		"characterName": "Illmagepa",
+		"displayName": "Illmage"
+	},
+	{
+		"characterName": "Shuibo",
+		"displayName": "Shuibo"
+	},
+	{
+		"characterName": "Damio",
+		"displayName": "Damio"
+	},
+	{
+		"characterName": "Nicdwagon",
+		"displayName": "Nic"
+	},
+	{
+		"characterName": "Deli",
+		"displayName": "Deli"
+	},
+	{
+		"characterName": "Xashayar",
+		"displayName": "Xashayar"
+	},
+	{
+		"characterName": "Whitespanks",
+		"displayName": "Bronze"
+	},
+	{
+		"characterName": "Velgandh",
+		"displayName": "Velgandh"
+	},
+	{
+		"characterName": "Duffmann",
+		"displayName": "Duffmann"
+	},
+	{
+		"characterName": "Lojicke",
+		"displayName": "Lojick"
+	},
+	{
+		"characterName": "Boostedbro",
+		"displayName": "Boosted"
+	},
+	{
+		"characterName": "Diverging",
+		"displayName": "Diver"
+	},
+	{
+		"characterName": "Runzngunz",
+		"displayName": "Runz"
+	},
+	{
+		"characterName": "Tatoski",
+		"displayName": "Tatoski"
+	},
+	{
+		"characterName": "Trøllnadø",
+		"displayName": "Trøllnadø"
+	},
+	{
+		"characterName": "Notdeadrandy",
+		"displayName": "Randy"
+	},
+	{
+		"characterName": "Oxxi",
+		"displayName": "Oxxi"
+	},
+	{
+		"characterName": "Weezyd",
+		"displayName": "Weezyd"
+	},
+	{
+		"characterName": "Elga",
+		"displayName": "Elga"
+	},
+	{
+		"characterName": "Billygos",
+		"displayName": "Billygos"
+	},
+	{
+		"characterName": "Chronìte",
+		"displayName": "Chronìte"
+	}
 ]
