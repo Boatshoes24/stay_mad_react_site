@@ -1,43 +1,44 @@
 [
-  {
-    "twitchName": "Illmage_",
-    "displayName": "Illmage",
-    "role": "dps",
-    "charClass": "mage"
-  },
-
-  {
-    "twitchName": "deliimeat",
-    "displayName": "Deli",
-    "role": "healer",
-    "charClass": "druid"
-  },
-
-  {
-    "twitchName": "getthatgoat",
-    "displayName": "Shoes",
-    "role": "tank",
-    "charClass": "dk"
-  },
-
-  {
-    "twitchName": "rollow55",
-    "displayName": "Rollow",
-    "role": "tank",
-    "charClass": "monk"
-  },
-
-  {
-    "twitchName": "magejulook",
-    "displayName": "Crunkio",
-    "role": "dps",
-    "charClass": "warlock"
-  },
-
-  {
-    "twitchName": "bronzespanks",
-    "displayName": "Bronze",
-    "role": "healer",
-    "charClass": "monk"
-  }
+	{
+		"twitchName": "Illmage_",
+		"displayName": "Illmage",
+		"role": "dps",
+		"charClass": "mage"
+	},
+	{
+		"twitchName": "getthatgoat",
+		"displayName": "Shoes",
+		"role": "tank",
+		"charClass": "dk"
+	},
+	{
+		"twitchName": "rollow55",
+		"displayName": "Rollow",
+		"role": "tank",
+		"charClass": "monk"
+	},
+	{
+		"twitchName": "magejulook",
+		"displayName": "Crunkio",
+		"role": "dps",
+		"charClass": "warlock"
+	},
+	{
+		"twitchName": "thedadbodgod",
+		"displayName": "Velgandh",
+		"role": "dps",
+		"charClass": "dh"
+	},
+	{
+		"twitchName": "weezyjw",
+		"displayName": "Weezy",
+		"role": "dps",
+		"charClass": "druid"
+	},
+	{
+		"twitchName": "lojickk",
+		"displayName": "Lojick",
+		"role": "dps",
+		"charClass": "evoker"
+	}
 ]

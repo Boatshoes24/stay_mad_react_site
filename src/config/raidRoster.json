@@ -24,7 +24,7 @@
 		"displayName": "Angesan"
 	},
 	{
-		"characterName": "Crunkio",
+		"characterName": "Damiglio",
 		"displayName": "Crunkio"
 	},
 	{
@@ -32,24 +32,8 @@
 		"displayName": "Nic"
 	},
 	{
-		"characterName": "Deli",
-		"displayName": "Deli"
-	},
-	{
-		"characterName": "Xashayar",
-		"displayName": "Xashayar"
-	},
-	{
-		"characterName": "Whitespanks",
-		"displayName": "Bronze"
-	},
-	{
 		"characterName": "Velgandh",
 		"displayName": "Velgandh"
-	},
-	{
-		"characterName": "Duffmann",
-		"displayName": "Duffmann"
 	},
 	{
 		"characterName": "Lojicked",
@@ -86,5 +70,21 @@
 	{
 		"characterName": "Jetdragoon",
 		"displayName": "Jet"
+	},
+	{
+		"characterName": "Omfgkittenz",
+		"displayName": "Kittenz"
+	},
+	{
+		"characterName": "Goblinoo",
+		"displayName": "Goblinoo"
+	},
+	{
+		"characterName": "Soundtactics",
+		"displayName": "Tactics"
+	},
+	{
+		"characterName": "Thesarian",
+		"displayName": "Thesarian"
 	}
 ]
