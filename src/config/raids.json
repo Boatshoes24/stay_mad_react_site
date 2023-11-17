@@ -1,12 +1,17 @@
 [
-  {
-    "name": "aberrus-the-shadowed-crucible",
-    "display": "Aberrus",
-    "img": "https://www.icy-veins.com/forums/uploads/monthly_2023_03/WoWScrnShot_031623_215918.jpg.d285d5592d4178781d3e256315a3b418.jpg"
-  },
-  {
-    "name": "vault-of-the-incarnates",
-    "display": "Vault of the Incarnates",
-    "img": "https://www.warcrafttavern.com/wp-content/uploads/2023/01/Raid-Finder-Wing-2-Vault-of-the-Incarnates.jpg"
-  }
+	{
+		"name": "amirdrassil-the-dreams-hope",
+		"display": "Amirdrassil",
+		"img": "https://static.wikia.nocookie.net/wowpedia/images/3/3e/Amirdrassil_concept_10.2.jpg/revision/latest/scale-to-width-down/5100?cb=20230908111414"
+	},
+	{
+		"name": "aberrus-the-shadowed-crucible",
+		"display": "Aberrus",
+		"img": "https://www.icy-veins.com/forums/uploads/monthly_2023_03/WoWScrnShot_031623_215918.jpg.d285d5592d4178781d3e256315a3b418.jpg"
+	},
+	{
+		"name": "vault-of-the-incarnates",
+		"display": "Vault of the Incarnates",
+		"img": "https://www.warcrafttavern.com/wp-content/uploads/2023/01/Raid-Finder-Wing-2-Vault-of-the-Incarnates.jpg"
+	}
 ]
