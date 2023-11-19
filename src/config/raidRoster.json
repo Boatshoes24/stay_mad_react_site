@@ -1,6 +1,6 @@
 [
 	{
-		"characterName": "Lightshoes",
+		"characterName": "Runeshoes",
 		"displayName": "Shoes"
 	},
 	{
@@ -8,11 +8,11 @@
 		"displayName": "Rollow"
 	},
 	{
-		"characterName": "Pridewalker",
+		"characterName": "Pridestalkér",
 		"displayName": "Pride"
 	},
 	{
-		"characterName": "Rellicore",
+		"characterName": "Rusticore",
 		"displayName": "Rellicore"
 	},
 	{
@@ -20,7 +20,7 @@
 		"displayName": "Illmage"
 	},
 	{
-		"characterName": "Angesan",
+		"characterName": "Shuibo",
 		"displayName": "Angesan"
 	},
 	{
@@ -28,7 +28,7 @@
 		"displayName": "Crunkio"
 	},
 	{
-		"characterName": "Nicdwagon",
+		"characterName": "Nicpwiest",
 		"displayName": "Nic"
 	},
 	{
@@ -60,15 +60,7 @@
 		"displayName": "Oxxi"
 	},
 	{
-		"characterName": "Weezyd",
-		"displayName": "Weezyd"
-	},
-	{
-		"characterName": "Elga",
-		"displayName": "Elga"
-	},
-	{
-		"characterName": "Jetdragoon",
+		"characterName": "Jettlock",
 		"displayName": "Jet"
 	},
 	{
@@ -86,5 +78,17 @@
 	{
 		"characterName": "Thesarian",
 		"displayName": "Thesarian"
+	},
+	{
+		"characterName": "Mythrà",
+		"displayName": "Mythrà"
+	},
+	{
+		"characterName": "Garyeet",
+		"displayName": "Garyeet"
+	},
+	{
+		"characterName": "Kirikomain",
+		"displayName": "Kirikomain"
 	}
 ]
