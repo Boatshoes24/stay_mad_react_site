@@ -55,7 +55,7 @@
 	},
 	{
 		"name": "Devastation Evoker",
-		"recruiting": true,
+		"recruiting": false,
 		"img": "evoker-dev.jpg",
 		"class": "evoker"
 	},
@@ -67,7 +67,7 @@
 	},
 	{
 		"name": "Beast Mastery Hunter",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "hunter-bm.jpg",
 		"class": "hunter"
 	},
@@ -85,13 +85,13 @@
 	},
 	{
 		"name": "Arcane Mage",
-		"recruiting": true,
+		"recruiting": false,
 		"img": "mage-arcane.jpg",
 		"class": "mage"
 	},
 	{
 		"name": "Fire Mage",
-		"recruiting": true,
+		"recruiting": false,
 		"img": "mage-fire.jpg",
 		"class": "mage"
 	},
@@ -199,13 +199,13 @@
 	},
 	{
 		"name": "Demonology Warlock",
-		"recruiting": true,
+		"recruiting": false,
 		"img": "warlock-demo.jpg",
 		"class": "warlock"
 	},
 	{
 		"name": "Destruction Warlock",
-		"recruiting": true,
+		"recruiting": false,
 		"img": "warlock-destro.jpg",
 		"class": "warlock"
 	},
