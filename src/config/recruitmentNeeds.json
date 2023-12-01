@@ -151,7 +151,7 @@
 	},
 	{
 		"name": "Shadow Priest",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "priest-shadow.jpg",
 		"class": "priest"
 	},
@@ -181,7 +181,7 @@
 	},
 	{
 		"name": "Enhancement Shaman",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "shaman-enhance.jpg",
 		"class": "shaman"
 	},
