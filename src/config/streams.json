@@ -1,15 +1,15 @@
 [
 	{
-		"twitchName": "Illmage_",
-		"displayName": "Illmage",
-		"role": "dps",
-		"charClass": "mage"
-	},
-	{
 		"twitchName": "getthatgoat",
 		"displayName": "Shoes",
 		"role": "tank",
 		"charClass": "dk"
+	},
+	{
+		"twitchName": "Illmage_",
+		"displayName": "Illmage",
+		"role": "dps",
+		"charClass": "mage"
 	},
 	{
 		"twitchName": "rollow55",
@@ -28,12 +28,6 @@
 		"displayName": "Velgandh",
 		"role": "dps",
 		"charClass": "dh"
-	},
-	{
-		"twitchName": "weezyjw",
-		"displayName": "Weezy",
-		"role": "dps",
-		"charClass": "druid"
 	},
 	{
 		"twitchName": "lojickk",
