@@ -60,6 +60,12 @@
 		"class": "evoker"
 	},
 	{
+		"name": "Augmentation Evoker",
+		"recruiting": false,
+		"img": "evoker-aug.png",
+		"class": "evoker"
+	},
+	{
 		"name": "Preservation Evoker",
 		"recruiting": false,
 		"img": "evoker-pres.jpg",

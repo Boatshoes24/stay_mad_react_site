@@ -4,10 +4,6 @@
 		"displayName": "Shoes"
 	},
 	{
-		"characterName": "Rollow",
-		"displayName": "Rollow"
-	},
-	{
 		"characterName": "Pridestalkér",
 		"displayName": "Pride"
 	},
@@ -48,14 +44,6 @@
 		"displayName": "Diver"
 	},
 	{
-		"characterName": "Tatoski",
-		"displayName": "Tatoski"
-	},
-	{
-		"characterName": "Notdeadrandy",
-		"displayName": "Randy"
-	},
-	{
 		"characterName": "Oxxi",
 		"displayName": "Oxxi"
 	},
@@ -90,5 +78,17 @@
 	{
 		"characterName": "Kirikomain",
 		"displayName": "Kirikomain"
+	},
+	{
+		"characterName": "Kramdyk",
+		"displayName": "Kramdyk"
+	},
+	{
+		"characterName": "Algtr",
+		"displayName": "Algtr"
+	},
+	{
+		"characterName": "Dawgie",
+		"displayName": "Dawgie"
 	}
 ]
