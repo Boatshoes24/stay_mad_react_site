@@ -31,13 +31,13 @@
 	},
 	{
 		"name": "Balance Druid",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "druid-balance.jpg",
 		"class": "druid"
 	},
 	{
 		"name": "Feral Druid",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "druid-feral.jpg",
 		"class": "druid"
 	},
@@ -49,25 +49,25 @@
 	},
 	{
 		"name": "Restoration Druid",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "druid-resto.jpg",
 		"class": "druid"
 	},
 	{
 		"name": "Devastation Evoker",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "evoker-dev.jpg",
 		"class": "evoker"
 	},
 	{
 		"name": "Augmentation Evoker",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "evoker-aug.png",
 		"class": "evoker"
 	},
 	{
 		"name": "Preservation Evoker",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "evoker-pres.jpg",
 		"class": "evoker"
 	},
@@ -79,7 +79,7 @@
 	},
 	{
 		"name": "Marksmanship Hunter",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "hunter-mm.jpg",
 		"class": "hunter"
 	},
@@ -91,19 +91,19 @@
 	},
 	{
 		"name": "Arcane Mage",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "mage-arcane.jpg",
 		"class": "mage"
 	},
 	{
 		"name": "Fire Mage",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "mage-fire.jpg",
 		"class": "mage"
 	},
 	{
 		"name": "Frost Mage",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "mage-frost.jpg",
 		"class": "mage"
 	},
@@ -115,7 +115,7 @@
 	},
 	{
 		"name": "Mistweaver Monk",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "monk-mw.jpg",
 		"class": "monk"
 	},
@@ -127,7 +127,7 @@
 	},
 	{
 		"name": "Holy Paladin",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "paladin-holy.jpg",
 		"class": "paladin"
 	},
@@ -145,19 +145,19 @@
 	},
 	{
 		"name": "Discipline Priest",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "priest-disc.jpg",
 		"class": "priest"
 	},
 	{
 		"name": "Holy Priest",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "priest-holy.jpg",
 		"class": "priest"
 	},
 	{
 		"name": "Shadow Priest",
-		"recruiting": true,
+		"recruiting": false,
 		"img": "priest-shadow.jpg",
 		"class": "priest"
 	},
@@ -193,7 +193,7 @@
 	},
 	{
 		"name": "Restoration Shaman",
-		"recruiting": false,
+		"recruiting": true,
 		"img": "shaman-resto.jpg",
 		"class": "shaman"
 	},
